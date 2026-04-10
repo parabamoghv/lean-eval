@@ -1,0 +1,188 @@
+version = 1
+
+[[problem]]
+id = "two_plus_two"
+title = "2 + 2 = 4"
+test = true
+module = "FormalMathEval.EasyProblems"
+theorem = "two_plus_two_eq_four"
+author = "Kim Morrison"
+notes = "An easy problem to get you on the leaderboard."
+source = "Internal starter problem."
+informal_solution = "By computation."
+
+[[problem]]
+id = "list_append_singleton_length"
+title = "Appending a singleton increases the list length"
+test = true
+module = "FormalMathEval.EasyProblems"
+theorem = "list_append_singleton_length"
+author = "Kim Morrison"
+notes = "A simple list problem that exercises notation in generated files."
+source = "Internal starter problem."
+informal_solution = "Compute the length after append."
+
+[[problem]]
+id = "cyclotomic_integer_house_le_two"
+title = "Real cyclotomic integer with house at most 2"
+test = false
+module = "FormalMathEval.NumberTheory.SmallHouse"
+theorem = "cyclotomic_integer_house_le_two"
+author = "Kim Morrison"
+notes = "The <= 2 branch of Theorem 1.0.5 from Calegari--Morrison--Snyder, stated using Mathlib's NumberField.house."
+source = "https://arxiv.org/pdf/1004.0665"
+informal_solution = "If the house is at most 2, then it equals 2 cos(pi / m) for some positive integer m."
+
+[[problem]]
+id = "cyclotomic_integer_house_between_two_and_76_33"
+title = "Real cyclotomic integer with house in (2, 76/33)"
+test = false
+module = "FormalMathEval.NumberTheory.SmallHouse"
+theorem = "cyclotomic_integer_house_between_two_and_76_33"
+author = "Kim Morrison"
+notes = "The 2 < house < 76/33 branch of Theorem 1.0.5 from Calegari--Morrison--Snyder, stated using Mathlib's NumberField.house."
+source = "https://arxiv.org/pdf/1004.0665"
+informal_solution = "If the house lies in (2, 76/33), then it is one of the five explicitly listed values."
+
+[[problem]]
+id = "riemann_hypothesis_iff_lagarias_elementary_criterion"
+title = "Lagarias criterion is equivalent to RH"
+test = false
+module = "FormalMathEval.NumberTheory.Lagarias"
+theorem = "riemann_hypothesis_iff_lagarias_elementary_criterion"
+author = "Kim Morrison"
+notes = "Lagarias' elementary divisor-sum criterion stated using Mathlib's RiemannHypothesis, harmonic numbers, and sigma notation."
+source = "https://arxiv.org/abs/math/0008177"
+informal_solution = "Prove that the Riemann hypothesis is equivalent to the inequality σ(n) ≤ H_n + exp(H_n) log(H_n) for all positive integers n."
+
+[[problem]]
+id = "finite_graph_ramsey_theorem"
+title = "Finite Ramsey theorem for graphs"
+test = false
+module = "FormalMathEval.Combinatorics.Ramsey"
+theorem = "finite_graph_ramsey_theorem"
+author = "Kim Morrison"
+notes = "States finite Ramsey existence for red/blue edge colourings of complete graphs, encoded by a graph and its complement."
+source = "Classical theorem in Ramsey theory."
+informal_solution = "Show that for every r and s there is an n such that every graph on n vertices contains either a clique of size r or an independent set of size s."
+
+[[problem]]
+id = "dvd_card_connectedComponent_markoffGraph"
+title = "Chen theorem for Markoff graphs"
+test = false
+module = "FormalMathEval.Combinatorics.MarkoffGraph"
+theorem = "dvd_card_connectedComponent_markoffGraph"
+author = "Kim Morrison"
+notes = "For prime p > 3, every connected component of the nonzero Markoff graph over ZMod p has cardinality divisible by p."
+source = "https://link.springer.com/article/10.1007/s00222-025-01346-9"
+informal_solution = "Exploit the Vieta involution symmetries of the Markoff graph over F_p and show each connected component has size divisible by p."
+
+[[problem]]
+id = "finite_group_isSolvable_of_card_eq_prime_pow_mul_prime_pow"
+title = "Burnside p^a q^b theorem"
+test = false
+module = "FormalMathEval.GroupTheory.Burnside"
+theorem = "finite_group_isSolvable_of_card_eq_prime_pow_mul_prime_pow"
+author = "Kim Morrison"
+notes = "Burnside's theorem that a finite group of order p^a q^b is solvable."
+source = "Classical theorem in finite group theory."
+informal_solution = "Use character theory and induction on the group order to prove solvability."
+
+[[problem]]
+id = "rouche_logCounting_zero_eq"
+title = "Rouche theorem via zero counting"
+test = false
+module = "FormalMathEval.ComplexAnalysis.Rouche"
+theorem = "rouche_logCounting_zero_eq"
+author = "Kim Morrison"
+notes = "Phrases Rouché's theorem as equality of zero-counting functions for f and f + g."
+source = "Classical theorem in complex analysis."
+informal_solution = "If |g| < |f| on the boundary circle, then f and f + g have the same number of zeros inside, counted with multiplicity."
+
+[[problem]]
+id = "exists_complementary_polynomial_on_unit_circle"
+title = "Complementary polynomial on the unit circle"
+test = false
+module = "FormalMathEval.ComplexAnalysis.ComplementaryPolynomials"
+theorem = "exists_complementary_polynomial_on_unit_circle"
+author = "Kim Morrison"
+notes = "If a complex polynomial has modulus at most 1 on the unit circle, then there is a same-degree complementary polynomial whose squared moduli add to 1 on the circle."
+source = "https://link.springer.com/article/10.1007/s00220-025-05302-9"
+informal_solution = "Construct a polynomial Q so that |P(z)|^2 + |Q(z)|^2 = 1 for all z on the unit circle."
+
+[[problem]]
+id = "irreducible_nonnegative_matrix_has_positive_eigenvector_at_spectralRadius"
+title = "Perron-Frobenius for irreducible nonnegative matrices"
+test = false
+module = "FormalMathEval.LinearAlgebra.PerronFrobenius"
+theorem = "irreducible_nonnegative_matrix_has_positive_eigenvector_at_spectralRadius"
+author = "Kim Morrison"
+notes = "A Perron-Frobenius style eigenvector existence statement at the spectral radius."
+source = "Classical theorem in linear algebra."
+informal_solution = "Show that an irreducible nonnegative matrix has a strictly positive eigenvector with eigenvalue equal to its spectral radius."
+
+[[problem]]
+id = "mem_convexHull_finset_extremePoints_of_mem_compact_convex"
+title = "Minkowski-Caratheodory theorem"
+test = false
+module = "FormalMathEval.ConvexGeometry.MinkowskiCaratheodory"
+theorem = "mem_convexHull_finset_extremePoints_of_mem_compact_convex"
+author = "Kim Morrison"
+notes = "Finite-dimensional compact convex sets are generated by their extreme points, with a finrank + 1 bound."
+source = "Classical theorem in convex geometry."
+informal_solution = "Combine Krein-Milman with Caratheodory to represent each point as a convex combination of at most finrank + 1 extreme points."
+
+[[problem]]
+id = "chudnovsky_formula_for_pi_inv"
+title = "Chudnovsky formula for pi inverse"
+test = false
+module = "FormalMathEval.Analysis.Chudnovsky"
+theorem = "chudnovsky_formula_for_pi_inv"
+author = "Kim Morrison"
+notes = "Uses the existing Mathlib definition of the Chudnovsky series and asks for the missing identity with pi inverse."
+source = "https://link.springer.com/article/10.1007/s40316-018-0102-6"
+informal_solution = "Evaluate the Chudnovsky series and prove that it sums to 1 / pi."
+
+[[problem]]
+id = "pi1_circle_mulEquiv_int"
+title = "pi_1 of the circle is Z"
+test = false
+module = "FormalMathEval.Topology.HomotopyGroups"
+theorem = "pi1_circle_mulEquiv_int"
+author = "Kim Morrison"
+notes = "Computes the fundamental group of the complex unit circle."
+source = "Classical theorem in algebraic topology."
+informal_solution = "Use winding number to identify loops in the circle up to homotopy with the integers."
+
+[[problem]]
+id = "pi3_sphere_two_mulEquiv_int"
+title = "pi_3 of the 2-sphere is Z"
+test = false
+module = "FormalMathEval.Topology.HomotopyGroups"
+theorem = "pi3_sphere_two_mulEquiv_int"
+author = "Kim Morrison"
+notes = "The classical computation pi_3(S^2) = Z, with an explicit basepoint."
+source = "Classical theorem in algebraic topology."
+informal_solution = "Use the Hopf fibration to identify the third homotopy group of the 2-sphere with the integers."
+
+[[problem]]
+id = "pin_sphere_n_mulEquiv_int"
+title = "pi_n of the n-sphere is Z"
+test = false
+module = "FormalMathEval.Topology.HomotopyGroups"
+theorem = "pin_sphere_n_mulEquiv_int"
+author = "Kim Morrison"
+notes = "The diagonal sphere homotopy-group computation pi_n(S^n) = Z for n at least 1."
+source = "Classical theorem in algebraic topology."
+informal_solution = "Identify homotopy classes of self-maps of S^n with their degree."
+
+[[problem]]
+id = "pi_succ_sphere_n_mulEquiv_zmod_two"
+title = "pi_(n+1) of S^n is Z/2 for n at least 3"
+test = false
+module = "FormalMathEval.Topology.HomotopyGroups"
+theorem = "pi_succ_sphere_n_mulEquiv_zmod_two"
+author = "Kim Morrison"
+notes = "A concrete stable-family homotopy-group computation."
+source = "Classical theorem in unstable homotopy theory."
+informal_solution = "Use suspension and the stable range to show the first stable stem is Z/2."

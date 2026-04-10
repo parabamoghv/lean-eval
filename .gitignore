@@ -1,0 +1,16 @@
+.lake/
+.cache/
+build/
+workspaces/
+scripts/__pycache__/
+generated/*/.lake/
+generated/*/build/
+generated/*/.cache/
+generated/*/lake-manifest.json
+*.olean
+*.ilean
+*.trace
+*.tmp
+results/
+
+tests/__pycache__/

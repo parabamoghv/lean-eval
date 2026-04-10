@@ -1,0 +1,70 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: leanprover/lean-action@v1
+        with:
+          use-mathlib-cache: true
+
+      - uses: actions/setup-go@v5
+        with:
+          go-version: stable
+
+      - name: Install landrun
+        run: |
+          go install github.com/zouuup/landrun/cmd/landrun@latest
+          echo "$(go env GOPATH)/bin" >> "$GITHUB_PATH"
+
+      - name: Build lean4export
+        run: |
+          git clone https://github.com/leanprover/lean4export.git .ci/lean4export
+          cd .ci/lean4export
+          lake build lean4export
+          echo "$PWD/.lake/build/bin" >> "$GITHUB_PATH"
+
+      - name: Build comparator
+        run: |
+          git clone https://github.com/leanprover/comparator.git .ci/comparator
+          cd .ci/comparator
+          lake build comparator
+          echo "$PWD/.lake/build/bin" >> "$GITHUB_PATH"
+
+      - name: Python Syntax Checks
+        run: python -m py_compile scripts/*.py tests/*.py
+
+      - name: Validate Manifest
+        run: python scripts/validate_manifest.py
+
+      - name: Build Problem Modules
+        run: python scripts/check_problem_build.py
+
+      - name: Submission Policy Check
+        run: python scripts/validate_submission.py --file generated/two_plus_two/Solution.lean
+
+      - name: Run Generator Tests
+        run: python -m unittest tests.test_generate_projects
+
+      - name: Run Scoring Tests
+        run: python -m unittest tests.test_run_eval
+
+      - name: Run Comparator Installation Checks
+        run: |
+          python -m unittest tests.test_check_comparator_installation
+          python scripts/check_comparator_installation.py
+
+      - name: Run Eval Workflow Check
+        run: python scripts/check_eval_workflow.py
+
+      - name: Verify Generated Output
+        run: python scripts/check_generated.py
+
+      - name: Build Generated Workspaces
+        run: python scripts/check_generated_builds.py
