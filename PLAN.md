@@ -160,9 +160,11 @@ The current repository only includes the trivial test problem `two_plus_two`.
 - add invariant-file validation for participant commits
 - add result schemas for per-problem and per-submission outputs
 - extend CI beyond the current repository health checks as the submission pipeline lands
-- migrate operational tooling from Python scripts to Lean scripts over time, so manifest
-  validation, generation, submission checks, scoring, and related repo automation can live
-  inside the Lean toolchain rather than a parallel Python stack
+- keep `lake exe lean-eval` as the only intended user-facing entrypoint
+- treat the current `lean-eval` shell-out implementation as transitional only
+- migrate operational tooling from Python scripts to native Lean implementations over time,
+  so manifest validation, generation, submission checks, scoring, and related repo
+  automation live inside the Lean toolchain rather than behind Python wrappers
 
 ### UX
 
