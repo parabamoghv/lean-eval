@@ -15,6 +15,7 @@ Mathlib already exposes irreducibility of nonnegative matrices via `Matrix.IsIrr
 spectral radius via `spectralRadius`.
 -/
 
+-- ANCHOR: irreducible_nonnegative_matrix_has_positive_eigenvector_at_spectralRadius
 @[eval_problem]
 theorem irreducible_nonnegative_matrix_has_positive_eigenvector_at_spectralRadius
     {n : Type*} [Fintype n] [DecidableEq n]
@@ -24,6 +25,7 @@ theorem irreducible_nonnegative_matrix_has_positive_eigenvector_at_spectralRadiu
       Module.End.HasEigenvector (Matrix.toLin' A) (spectralRadius ℝ A).toReal v ∧
       (∀ i, 0 < v i) := by
   sorry
+-- ANCHOR_END: irreducible_nonnegative_matrix_has_positive_eigenvector_at_spectralRadius
 
 end LinearAlgebra
 end FormalMathEval
