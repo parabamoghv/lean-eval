@@ -6,12 +6,14 @@ Score local generated workspaces by counting attempted problems and comparator s
 from __future__ import annotations
 
 import argparse
+import contextlib
 import json
+import os
 import pathlib
 import subprocess
 import sys
 from dataclasses import asdict, dataclass
-from typing import Callable
+from typing import Callable, Iterator
 
 import generate_projects as gp
 
@@ -207,6 +209,26 @@ def parse_args() -> argparse.Namespace:
     return parser.parse_args()
 
 
+@contextlib.contextmanager
+def _stdout_to_stderr() -> Iterator[None]:
+    """Redirect file-descriptor 1 (stdout) to file-descriptor 2 (stderr).
+
+    Needed because lake build invocations from generate_projects.py inherit
+    stdout from the Python process, and their "Replayed" / "Built" progress
+    lines pollute stdout even after we redirect Python's `print`. We do
+    this at the file-descriptor level so subprocess children inherit the
+    redirected fd.
+    """
+    saved = os.dup(sys.stdout.fileno())
+    try:
+        os.dup2(sys.stderr.fileno(), sys.stdout.fileno())
+        yield
+    finally:
+        sys.stdout.flush()
+        os.dup2(saved, sys.stdout.fileno())
+        os.close(saved)
+
+
 def main() -> int:
     args = parse_args()
     try:
@@ -214,14 +236,29 @@ def main() -> int:
         gp.validate_problems(problems)
         # Validate against the full manifest so that per-module inventory
         # checks do not trip when --problem filters to a subset.
-        gp.validate_manifest_against_inventory(problems)
-        problems = selected_problems(problems, args.problem)
-        gp.build_extractor(problems)
-        scores = score_problems(
-            problems,
-            workspaces_root=pathlib.Path(args.workspaces_root),
-        )
-        summary = summarize_scores(scores)
+        #
+        # In --json mode, redirect stdout to stderr for everything until
+        # we have the final summary, so that lake build progress lines
+        # do not pollute the JSON payload we emit.
+        if args.json:
+            with _stdout_to_stderr():
+                gp.validate_manifest_against_inventory(problems)
+                problems = selected_problems(problems, args.problem)
+                gp.build_extractor(problems)
+                scores = score_problems(
+                    problems,
+                    workspaces_root=pathlib.Path(args.workspaces_root),
+                )
+                summary = summarize_scores(scores)
+        else:
+            gp.validate_manifest_against_inventory(problems)
+            problems = selected_problems(problems, args.problem)
+            gp.build_extractor(problems)
+            scores = score_problems(
+                problems,
+                workspaces_root=pathlib.Path(args.workspaces_root),
+            )
+            summary = summarize_scores(scores)
     except gp.GenerationError as exc:
         if args.json:
             print(json.dumps({"status": "error", "message": str(exc)}, indent=2))
