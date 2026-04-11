@@ -71,11 +71,15 @@ def run_problem_test(
     workspaces_root: pathlib.Path = DEFAULT_WORKSPACES_ROOT,
 ) -> int:
     problem_dir = workspace_path_for_problem(problem_id, workspaces_root=workspaces_root)
+    # Forward lake test output to this process's stderr so it does not
+    # pollute stdout, which must stay clean for --json callers.
     completed = subprocess.run(
         ["lake", "test"],
         cwd=problem_dir,
         text=True,
         check=False,
+        stdout=sys.stderr,
+        stderr=sys.stderr,
     )
     return completed.returncode
 
