@@ -208,8 +208,10 @@ def main() -> int:
     try:
         problems = gp.load_manifest(pathlib.Path(args.manifest))
         gp.validate_problems(problems)
-        problems = selected_problems(problems, args.problem)
+        # Validate against the full manifest so that per-module inventory
+        # checks do not trip when --problem filters to a subset.
         gp.validate_manifest_against_inventory(problems)
+        problems = selected_problems(problems, args.problem)
         gp.build_extractor(problems)
         scores = score_problems(
             problems,
