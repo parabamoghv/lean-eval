@@ -30,7 +30,7 @@ class RunEvalTests(unittest.TestCase):
             test=True,
             module="Demo.Module",
             theorem="demo_theorem",
-            author="Kim",
+            submitter="Kim",
         )
         extracted = gp.ExtractedTheorem(
             declaration_name="Demo.demo_theorem",
@@ -88,7 +88,7 @@ class RunEvalTests(unittest.TestCase):
                 test=True,
                 module="M",
                 theorem="t1",
-                author="Kim",
+                submitter="Kim",
             ),
             gp.ProblemSpec(
                 id="attempted_fail",
@@ -96,7 +96,7 @@ class RunEvalTests(unittest.TestCase):
                 test=False,
                 module="M",
                 theorem="t2",
-                author="Kim",
+                submitter="Kim",
             ),
             gp.ProblemSpec(
                 id="untouched",
@@ -104,7 +104,7 @@ class RunEvalTests(unittest.TestCase):
                 test=False,
                 module="M",
                 theorem="t3",
-                author="Kim",
+                submitter="Kim",
             ),
         ]
 
@@ -237,7 +237,7 @@ class RunEvalTests(unittest.TestCase):
             test=True,
             module="Demo.Module",
             theorem="demo_theorem",
-            author="Kim",
+            submitter="Kim",
         )
         extracted = gp.ExtractedTheorem(
             declaration_name="Demo.demo_theorem",

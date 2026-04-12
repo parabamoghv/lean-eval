@@ -3,7 +3,7 @@
     "id": "two_plus_two",
     "title": "2 + 2 = 4",
     "test": true,
-    "author": "Kim Morrison",
+    "submitter": "Kim Morrison",
     "module": "FormalMathEval.EasyProblems",
     "theorem": "two_plus_two_eq_four",
     "generated_path": "generated/two_plus_two"
@@ -12,7 +12,7 @@
     "id": "list_append_singleton_length",
     "title": "Appending a singleton increases the list length",
     "test": true,
-    "author": "Kim Morrison",
+    "submitter": "Kim Morrison",
     "module": "FormalMathEval.EasyProblems",
     "theorem": "list_append_singleton_length",
     "generated_path": "generated/list_append_singleton_length"
@@ -21,7 +21,7 @@
     "id": "cyclotomic_integer_house_le_two",
     "title": "Real cyclotomic integer with house at most 2",
     "test": false,
-    "author": "Kim Morrison",
+    "submitter": "Kim Morrison",
     "module": "FormalMathEval.NumberTheory.SmallHouse",
     "theorem": "cyclotomic_integer_house_le_two",
     "generated_path": "generated/cyclotomic_integer_house_le_two"
@@ -30,7 +30,7 @@
     "id": "cyclotomic_integer_house_between_two_and_76_33",
     "title": "Real cyclotomic integer with house in (2, 76/33)",
     "test": false,
-    "author": "Kim Morrison",
+    "submitter": "Kim Morrison",
     "module": "FormalMathEval.NumberTheory.SmallHouse",
     "theorem": "cyclotomic_integer_house_between_two_and_76_33",
     "generated_path": "generated/cyclotomic_integer_house_between_two_and_76_33"
@@ -39,7 +39,7 @@
     "id": "riemann_hypothesis_iff_lagarias_elementary_criterion",
     "title": "Lagarias criterion is equivalent to RH",
     "test": false,
-    "author": "Kim Morrison",
+    "submitter": "Kim Morrison",
     "module": "FormalMathEval.NumberTheory.Lagarias",
     "theorem": "riemann_hypothesis_iff_lagarias_elementary_criterion",
     "generated_path": "generated/riemann_hypothesis_iff_lagarias_elementary_criterion"
@@ -48,7 +48,7 @@
     "id": "finite_graph_ramsey_theorem",
     "title": "Finite Ramsey theorem for graphs",
     "test": false,
-    "author": "Kim Morrison",
+    "submitter": "Kim Morrison",
     "module": "FormalMathEval.Combinatorics.Ramsey",
     "theorem": "finite_graph_ramsey_theorem",
     "generated_path": "generated/finite_graph_ramsey_theorem"
@@ -57,7 +57,7 @@
     "id": "dvd_card_connectedComponent_markoffGraph",
     "title": "Chen theorem for Markoff graphs",
     "test": false,
-    "author": "Kim Morrison",
+    "submitter": "Kim Morrison",
     "module": "FormalMathEval.Combinatorics.MarkoffGraph",
     "theorem": "dvd_card_connectedComponent_markoffGraph",
     "generated_path": "generated/dvd_card_connectedComponent_markoffGraph"
@@ -66,7 +66,7 @@
     "id": "finite_group_isSolvable_of_card_eq_prime_pow_mul_prime_pow",
     "title": "Burnside p^a q^b theorem",
     "test": false,
-    "author": "Kim Morrison",
+    "submitter": "Kim Morrison",
     "module": "FormalMathEval.GroupTheory.Burnside",
     "theorem": "finite_group_isSolvable_of_card_eq_prime_pow_mul_prime_pow",
     "generated_path": "generated/finite_group_isSolvable_of_card_eq_prime_pow_mul_prime_pow"
@@ -75,7 +75,7 @@
     "id": "rouche_logCounting_zero_eq",
     "title": "Rouche theorem via zero counting",
     "test": false,
-    "author": "Kim Morrison",
+    "submitter": "Kim Morrison",
     "module": "FormalMathEval.ComplexAnalysis.Rouche",
     "theorem": "rouche_logCounting_zero_eq",
     "generated_path": "generated/rouche_logCounting_zero_eq"
@@ -84,7 +84,7 @@
     "id": "exists_complementary_polynomial_on_unit_circle",
     "title": "Complementary polynomial on the unit circle",
     "test": false,
-    "author": "Kim Morrison",
+    "submitter": "Kim Morrison",
     "module": "FormalMathEval.ComplexAnalysis.ComplementaryPolynomials",
     "theorem": "exists_complementary_polynomial_on_unit_circle",
     "generated_path": "generated/exists_complementary_polynomial_on_unit_circle"
@@ -93,7 +93,7 @@
     "id": "irreducible_nonnegative_matrix_has_positive_eigenvector_at_spectralRadius",
     "title": "Perron-Frobenius for irreducible nonnegative matrices",
     "test": false,
-    "author": "Kim Morrison",
+    "submitter": "Kim Morrison",
     "module": "FormalMathEval.LinearAlgebra.PerronFrobenius",
     "theorem": "irreducible_nonnegative_matrix_has_positive_eigenvector_at_spectralRadius",
     "generated_path": "generated/irreducible_nonnegative_matrix_has_positive_eigenvector_at_spectralRadius"
@@ -102,7 +102,7 @@
     "id": "mem_convexHull_finset_extremePoints_of_mem_compact_convex",
     "title": "Minkowski-Caratheodory theorem",
     "test": false,
-    "author": "Kim Morrison",
+    "submitter": "Kim Morrison",
     "module": "FormalMathEval.ConvexGeometry.MinkowskiCaratheodory",
     "theorem": "mem_convexHull_finset_extremePoints_of_mem_compact_convex",
     "generated_path": "generated/mem_convexHull_finset_extremePoints_of_mem_compact_convex"
@@ -111,7 +111,7 @@
     "id": "chudnovsky_formula_for_pi_inv",
     "title": "Chudnovsky formula for pi inverse",
     "test": false,
-    "author": "Kim Morrison",
+    "submitter": "Kim Morrison",
     "module": "FormalMathEval.Analysis.Chudnovsky",
     "theorem": "chudnovsky_formula_for_pi_inv",
     "generated_path": "generated/chudnovsky_formula_for_pi_inv"
@@ -120,7 +120,7 @@
     "id": "pi1_circle_mulEquiv_int",
     "title": "pi_1 of the circle is Z",
     "test": false,
-    "author": "Kim Morrison",
+    "submitter": "Kim Morrison",
     "module": "FormalMathEval.Topology.HomotopyGroups",
     "theorem": "pi1_circle_mulEquiv_int",
     "generated_path": "generated/pi1_circle_mulEquiv_int"
@@ -129,7 +129,7 @@
     "id": "pi3_sphere_two_mulEquiv_int",
     "title": "pi_3 of the 2-sphere is Z",
     "test": false,
-    "author": "Kim Morrison",
+    "submitter": "Kim Morrison",
     "module": "FormalMathEval.Topology.HomotopyGroups",
     "theorem": "pi3_sphere_two_mulEquiv_int",
     "generated_path": "generated/pi3_sphere_two_mulEquiv_int"
@@ -138,7 +138,7 @@
     "id": "pin_sphere_n_mulEquiv_int",
     "title": "pi_n of the n-sphere is Z",
     "test": false,
-    "author": "Kim Morrison",
+    "submitter": "Kim Morrison",
     "module": "FormalMathEval.Topology.HomotopyGroups",
     "theorem": "pin_sphere_n_mulEquiv_int",
     "generated_path": "generated/pin_sphere_n_mulEquiv_int"
@@ -147,7 +147,7 @@
     "id": "pi_succ_sphere_n_mulEquiv_zmod_two",
     "title": "pi_(n+1) of S^n is Z/2 for n at least 3",
     "test": false,
-    "author": "Kim Morrison",
+    "submitter": "Kim Morrison",
     "module": "FormalMathEval.Topology.HomotopyGroups",
     "theorem": "pi_succ_sphere_n_mulEquiv_zmod_two",
     "generated_path": "generated/pi_succ_sphere_n_mulEquiv_zmod_two"

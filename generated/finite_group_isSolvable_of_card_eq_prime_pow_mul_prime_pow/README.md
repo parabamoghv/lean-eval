@@ -4,7 +4,7 @@ Burnside p^a q^b theorem
 
 - Problem ID: `finite_group_isSolvable_of_card_eq_prime_pow_mul_prime_pow`
 - Test Problem: no
-- Author: Kim Morrison
+- Submitter: Kim Morrison
 - Notes: Burnside's theorem that a finite group of order p^a q^b is solvable.
 - Source: Classical theorem in finite group theory.
 - Informal solution: Use character theory and induction on the group order to prove solvability.

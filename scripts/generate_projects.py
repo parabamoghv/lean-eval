@@ -56,7 +56,7 @@ class ProblemSpec:
     test: bool
     module: str
     theorem: str
-    author: str
+    submitter: str
     notes: str | None = None
     source: str | None = None
     informal_solution: str | None = None
@@ -124,7 +124,7 @@ def load_manifest(path: pathlib.Path) -> list[ProblemSpec]:
 
 
 def parse_problem(raw_problem: dict, index: int) -> ProblemSpec:
-    required_fields = ["id", "title", "module", "theorem", "author"]
+    required_fields = ["id", "title", "module", "theorem", "submitter"]
     optional_fields = ["notes", "source", "informal_solution"]
 
     values: dict[str, str | None] = {}
@@ -165,7 +165,7 @@ def parse_problem(raw_problem: dict, index: int) -> ProblemSpec:
         test=test_value,
         module=values["module"],
         theorem=values["theorem"],
-        author=values["author"],
+        submitter=values["submitter"],
         notes=values["notes"],
         source=values["source"],
         informal_solution=values["informal_solution"],
@@ -663,7 +663,7 @@ def render_workspace(
         "",
         f"- Problem ID: `{problem.id}`",
         f"- Test Problem: {'yes' if problem.test else 'no'}",
-        f"- Author: {problem.author}",
+        f"- Submitter: {problem.submitter}",
     ]
     if problem.notes:
         readme_lines.append(f"- Notes: {problem.notes}")
@@ -776,9 +776,12 @@ def render_workspace(
             "    pure 1\n"
             "  else\n"
             "    try\n"
+            "      let sandboxHome ← (← IO.currentDir) / \".lake\" / \"home\"\n"
+            "      IO.FS.createDirAll sandboxHome\n"
             "      let child ← IO.Process.spawn {\n"
             '        cmd := "lake"\n'
             '        args := #["env", comparatorBin, "config.json"]\n'
+            "        env := #[(\"HOME\", some sandboxHome.toString)]\n"
             "      }\n"
             "      let exitCode ← child.wait\n"
             "      pure exitCode\n"
@@ -933,7 +936,7 @@ def generate(
                 "id": problem.id,
                 "title": problem.title,
                 "test": problem.test,
-                "author": problem.author,
+                "submitter": problem.submitter,
                 "module": problem.module,
                 "theorem": problem.theorem,
                 "generated_path": f"generated/{problem.id}",

@@ -4,7 +4,7 @@ pi_(n+1) of S^n is Z/2 for n at least 3
 
 - Problem ID: `pi_succ_sphere_n_mulEquiv_zmod_two`
 - Test Problem: no
-- Author: Kim Morrison
+- Submitter: Kim Morrison
 - Notes: A concrete stable-family homotopy-group computation.
 - Source: Classical theorem in unstable homotopy theory.
 - Informal solution: Use suspension and the stable range to show the first stable stem is Z/2.

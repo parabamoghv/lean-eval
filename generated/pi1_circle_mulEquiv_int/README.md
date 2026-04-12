@@ -4,7 +4,7 @@ pi_1 of the circle is Z
 
 - Problem ID: `pi1_circle_mulEquiv_int`
 - Test Problem: no
-- Author: Kim Morrison
+- Submitter: Kim Morrison
 - Notes: Computes the fundamental group of the complex unit circle.
 - Source: Classical theorem in algebraic topology.
 - Informal solution: Use winding number to identify loops in the circle up to homotopy with the integers.

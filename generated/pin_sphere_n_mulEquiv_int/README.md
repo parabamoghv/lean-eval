@@ -4,7 +4,7 @@ pi_n of the n-sphere is Z
 
 - Problem ID: `pin_sphere_n_mulEquiv_int`
 - Test Problem: no
-- Author: Kim Morrison
+- Submitter: Kim Morrison
 - Notes: The diagonal sphere homotopy-group computation pi_n(S^n) = Z for n at least 1.
 - Source: Classical theorem in algebraic topology.
 - Informal solution: Identify homotopy classes of self-maps of S^n with their degree.

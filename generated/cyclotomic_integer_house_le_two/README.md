@@ -4,7 +4,7 @@ Real cyclotomic integer with house at most 2
 
 - Problem ID: `cyclotomic_integer_house_le_two`
 - Test Problem: no
-- Author: Kim Morrison
+- Submitter: Kim Morrison
 - Notes: The <= 2 branch of Theorem 1.0.5 from Calegari--Morrison--Snyder, stated using Mathlib's NumberField.house.
 - Source: https://arxiv.org/pdf/1004.0665
 - Informal solution: If the house is at most 2, then it equals 2 cos(pi / m) for some positive integer m.

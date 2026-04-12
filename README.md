@@ -54,7 +54,7 @@ title = "My new problem"
 test = false
 module = "FormalMathEval.SomeModule"
 theorem = "my_new_problem"
-author = "Your Name"
+submitter = "Your Name"
 notes = "Optional notes."
 source = "Optional citation or URL."
 informal_solution = "Optional proof sketch or reference."
@@ -67,7 +67,7 @@ The required fields are:
 - `test`
 - `module`
 - `theorem`
-- `author`
+- `submitter`
 
 ### 4. Validate the authored source of truth
 

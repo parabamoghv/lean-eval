@@ -4,7 +4,7 @@ Lagarias criterion is equivalent to RH
 
 - Problem ID: `riemann_hypothesis_iff_lagarias_elementary_criterion`
 - Test Problem: no
-- Author: Kim Morrison
+- Submitter: Kim Morrison
 - Notes: Lagarias' elementary divisor-sum criterion stated using Mathlib's RiemannHypothesis, harmonic numbers, and sigma notation.
 - Source: https://arxiv.org/abs/math/0008177
 - Informal solution: Prove that the Riemann hypothesis is equivalent to the inequality σ(n) ≤ H_n + exp(H_n) log(H_n) for all positive integers n.

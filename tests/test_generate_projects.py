@@ -34,7 +34,7 @@ id = "bad/id"
 title = "Bad"
 module = "FormalMathEval.EasyProblems"
 theorem = "two_plus_two_eq_four"
-author = "Kim"
+submitter = "Kim"
 """.strip()
                 + "\n",
                 encoding="utf-8",
@@ -50,7 +50,7 @@ author = "Kim"
                 test=False,
                 module="M",
                 theorem="t1",
-                author="Kim",
+                submitter="Kim",
             ),
             gp.ProblemSpec(
                 id="two_plus_two",
@@ -58,7 +58,7 @@ author = "Kim"
                 test=False,
                 module="M",
                 theorem="t2",
-                author="Kim",
+                submitter="Kim",
             ),
         ]
         with self.assertRaisesRegex(gp.GenerationError, "Duplicate problem id"):
@@ -72,7 +72,7 @@ author = "Kim"
                 test=False,
                 module="M",
                 theorem="t",
-                author="Kim",
+                submitter="Kim",
             ),
             gp.ProblemSpec(
                 id="b",
@@ -80,7 +80,7 @@ author = "Kim"
                 test=False,
                 module="M",
                 theorem="t",
-                author="Kim",
+                submitter="Kim",
             ),
         ]
         with self.assertRaisesRegex(gp.GenerationError, "Duplicate theorem reference"):
@@ -88,9 +88,9 @@ author = "Kim"
 
     def test_unique_modules_preserves_order(self) -> None:
         problems = [
-            gp.ProblemSpec(id="a", title="A", test=False, module="M1", theorem="t1", author="Kim"),
-            gp.ProblemSpec(id="b", title="B", test=False, module="M2", theorem="t2", author="Kim"),
-            gp.ProblemSpec(id="c", title="C", test=False, module="M1", theorem="t3", author="Kim"),
+            gp.ProblemSpec(id="a", title="A", test=False, module="M1", theorem="t1", submitter="Kim"),
+            gp.ProblemSpec(id="b", title="B", test=False, module="M2", theorem="t2", submitter="Kim"),
+            gp.ProblemSpec(id="c", title="C", test=False, module="M1", theorem="t3", submitter="Kim"),
         ]
         self.assertEqual(gp.unique_modules(problems), ["M1", "M2"])
 
@@ -101,7 +101,7 @@ author = "Kim"
             test=True,
             module="FormalMathEval.EasyProblems",
             theorem="two_plus_two_eq_four",
-            author="Kim",
+            submitter="Kim",
         )
         extracted = gp.ExtractedTheorem(
             declaration_name="FormalMathEval.two_plus_two_eq_four",
@@ -118,7 +118,7 @@ author = "Kim"
             test=True,
             module="FormalMathEval.EasyProblems",
             theorem="two_plus_two_eq_four",
-            author="Kim",
+            submitter="Kim",
         )
         extracted = gp.ExtractedTheorem(
             declaration_name="FormalMathEval.two_plus_two_eq_four",
@@ -167,7 +167,7 @@ author = "Kim"
                 test=True,
                 module="FormalMathEval.EasyProblems",
                 theorem="FormalMathEval.two_plus_two_eq_four",
-                author="Kim",
+                submitter="Kim",
             )
         )
         self.assertEqual(extracted.declaration_name, "FormalMathEval.two_plus_two_eq_four")
@@ -182,7 +182,7 @@ author = "Kim"
                     test=False,
                     module="FormalMathEval.EasyProblems",
                     theorem="does_not_exist",
-                    author="Kim",
+                    submitter="Kim",
                 )
             )
 
@@ -195,7 +195,7 @@ author = "Kim"
                     test=False,
                     module="FormalMathEval.EasyProblems",
                     theorem="starterNumber",
-                    author="Kim",
+                    submitter="Kim",
                 )
             )
 
@@ -212,7 +212,7 @@ title = "Bad"
 test = "yes"
 module = "FormalMathEval.EasyProblems"
 theorem = "two_plus_two_eq_four"
-author = "Kim"
+submitter = "Kim"
 """.strip()
                 + "\n",
                 encoding="utf-8",

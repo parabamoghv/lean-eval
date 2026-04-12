@@ -4,7 +4,7 @@ Finite Ramsey theorem for graphs
 
 - Problem ID: `finite_graph_ramsey_theorem`
 - Test Problem: no
-- Author: Kim Morrison
+- Submitter: Kim Morrison
 - Notes: States finite Ramsey existence for red/blue edge colourings of complete graphs, encoded by a graph and its complement.
 - Source: Classical theorem in Ramsey theory.
 - Informal solution: Show that for every r and s there is an n such that every graph on n vertices contains either a clique of size r or an independent set of size s.

@@ -4,7 +4,7 @@
 
 - Problem ID: `two_plus_two`
 - Test Problem: yes
-- Author: Kim Morrison
+- Submitter: Kim Morrison
 - Notes: An easy problem to get you on the leaderboard.
 - Source: Internal starter problem.
 - Informal solution: By computation.

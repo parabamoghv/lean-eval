@@ -18,7 +18,7 @@ structure EvalProblemMetadata where
   test : Bool
   moduleName : String
   theoremName : String
-  author : String
+  submitter : String
   notes : Option String := none
   source : Option String := none
   informalSolution : Option String := none
@@ -49,7 +49,7 @@ instance : DecodeToml EvalProblemMetadata where
     let title ← requireNonempty "title" (← t.decode `title)
     let moduleName ← requireNonempty "module" (← t.decode `module)
     let theoremName ← requireNonempty "theorem" (← t.decode `theorem)
-    let author ← requireNonempty "author" (← t.decode `author)
+    let submitter ← requireNonempty "submitter" (← t.decode `submitter)
     let notes? : Option String ← t.decode? `notes
     let source? : Option String ← t.decode? `source
     let informalSolution? : Option String ← t.decode? `informal_solution
@@ -59,7 +59,7 @@ instance : DecodeToml EvalProblemMetadata where
       test := ← t.decode `test
       moduleName := moduleName
       theoremName := theoremName
-      author := author
+      submitter := submitter
       notes := notes?.bind fun s => if s.isEmpty then none else some s
       source := source?.bind fun s => if s.isEmpty then none else some s
       informalSolution := informalSolution?.bind fun s => if s.isEmpty then none else some s
@@ -135,7 +135,7 @@ def formatManifestHover (metadata : EvalProblemMetadata) : String :=
       s!"- test: `{metadata.test}`",
       s!"- module: `{metadata.moduleName}`",
       s!"- theorem: `{metadata.theoremName}`",
-      s!"- author: {metadata.author}"
+      s!"- submitter: {metadata.submitter}"
     ]
     if let some notes := metadata.notes then
       lines := lines.push s!"- notes: {notes}"

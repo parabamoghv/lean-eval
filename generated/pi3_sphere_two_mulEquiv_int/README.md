@@ -4,7 +4,7 @@ pi_3 of the 2-sphere is Z
 
 - Problem ID: `pi3_sphere_two_mulEquiv_int`
 - Test Problem: no
-- Author: Kim Morrison
+- Submitter: Kim Morrison
 - Notes: The classical computation pi_3(S^2) = Z, with an explicit basepoint.
 - Source: Classical theorem in algebraic topology.
 - Informal solution: Use the Hopf fibration to identify the third homotopy group of the 2-sphere with the integers.

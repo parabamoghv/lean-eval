@@ -4,7 +4,7 @@ Appending a singleton increases the list length
 
 - Problem ID: `list_append_singleton_length`
 - Test Problem: yes
-- Author: Kim Morrison
+- Submitter: Kim Morrison
 - Notes: A simple list problem that exercises notation in generated files.
 - Source: Internal starter problem.
 - Informal solution: Compute the length after append.

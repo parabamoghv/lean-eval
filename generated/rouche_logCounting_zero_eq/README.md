@@ -4,7 +4,7 @@ Rouche theorem via zero counting
 
 - Problem ID: `rouche_logCounting_zero_eq`
 - Test Problem: no
-- Author: Kim Morrison
+- Submitter: Kim Morrison
 - Notes: Phrases Rouché's theorem as equality of zero-counting functions for f and f + g.
 - Source: Classical theorem in complex analysis.
 - Informal solution: If |g| < |f| on the boundary circle, then f and f + g have the same number of zeros inside, counted with multiplicity.
