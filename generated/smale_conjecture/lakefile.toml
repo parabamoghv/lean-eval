@@ -1,4 +1,4 @@
-name = "pi3_sphere_two_mulEquiv_int"
+name = "smale_conjecture"
 testDriver = "workspace_test"
 defaultTargets = ["Challenge", "Solution", "Submission"]
 
