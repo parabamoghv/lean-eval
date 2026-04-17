@@ -1,6 +1,7 @@
 import ChallengeDeps
 import Submission
 
+open LeanEval.Combinatorics
 open scoped BigOperators
 
 theorem dvd_card_connectedComponent_markoffGraph {p : ℕ} (hp : Nat.Prime p) (hgt : 3 < p) :

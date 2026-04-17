@@ -389,12 +389,25 @@ def extract_statement_text(problem: ProblemSpec, extracted: ExtractedTheorem) ->
     end = offset_for_line_column(source_text, end_line, end_column)
     declaration_text = source_text[start:end]
     theorem_name = local_theorem_name(extracted)
-    match = _theorem_by_pattern(theorem_name).search(declaration_text)
-    if not match:
+    # Find the theorem header to locate the start of the body.
+    header = re.search(
+        rf"(?:^|\s)theorem\s+{re.escape(theorem_name)}\b",
+        declaration_text,
+        re.DOTALL,
+    )
+    if not header:
         raise GenerationError(
             f"Could not recover theorem statement text for '{problem.id}' from {source_path}"
         )
-    return match.group("body").strip()
+    # Use rfind to locate the *last* `:= by` in the declaration text.
+    # This handles theorems whose type contains nested `haveI ... := by`
+    # clauses: the outer proof marker is always the last one.
+    last_by = declaration_text.rfind(":= by")
+    if last_by == -1:
+        raise GenerationError(
+            f"Could not recover theorem statement text for '{problem.id}' from {source_path}"
+        )
+    return declaration_text[header.end():last_by].strip()
 
 
 def extract_source_text_for_range(source_text: str, source_range: tuple[int, int, int, int]) -> str:
@@ -512,12 +525,13 @@ def render_challenge_deps(problem: ProblemSpec, extracted: ExtractedTheorem) -> 
     return "import Mathlib\n\n" + challenge_deps_body
 
 
-def extract_context_opens(problem: ProblemSpec) -> str:
+def extract_context_opens(problem: ProblemSpec, *, include_namespaces: bool = False) -> str:
     source_path = module_source_path(problem.module)
     if not source_path.is_file():
         raise GenerationError(f"Source file for module '{problem.module}' not found: {source_path}")
     lines = source_path.read_text(encoding="utf-8").splitlines()
     context_lines: list[str] = []
+    namespace_stack: list[str] = []
     in_body = False
     for line in lines:
         stripped = line.strip()
@@ -530,8 +544,15 @@ def extract_context_opens(problem: ProblemSpec) -> str:
             stripped,
         ):
             break
-        if stripped.startswith("open "):
+        if stripped.startswith("namespace "):
+            namespace_stack.append(stripped.split(maxsplit=1)[1].strip())
+        elif re.match(r"^end\b", stripped):
+            if namespace_stack:
+                namespace_stack.pop()
+        elif stripped.startswith("open "):
             context_lines.append(line)
+    if include_namespaces and namespace_stack:
+        context_lines.insert(0, "open " + ".".join(namespace_stack))
     return "\n".join(context_lines) + ("\n\n" if context_lines else "")
 
 
@@ -620,7 +641,9 @@ def render_workspace(
         if challenge_deps is not None
         else "import Mathlib\nimport Submission.Helpers\n\n"
     )
-    context_open_block = extract_context_opens(problem)
+    context_open_block = extract_context_opens(
+        problem, include_namespaces=challenge_deps is not None
+    )
     if context_open_block and not context_open_block.endswith("\n\n"):
         context_open_block += "\n"
     readme_lines = [

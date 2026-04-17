@@ -1,6 +1,7 @@
 import ChallengeDeps
 import Submission.Helpers
 
+open LeanEval.Combinatorics
 open scoped BigOperators
 
 namespace Submission
