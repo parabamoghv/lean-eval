@@ -186,3 +186,58 @@ submitter = "Kim Morrison"
 notes = "A concrete stable-family homotopy-group computation."
 source = "Classical theorem in unstable homotopy theory."
 informal_solution = "Use suspension and the stable range to show the first stable stem is Z/2."
+
+[[problem]]
+id = "substInv_X_sub_X_sq_eq_catalan"
+title = "Catalan generating function via compositional inversion"
+test = false
+module = "LeanEval.Combinatorics.CatalanSubstInv"
+theorem = "substInv_X_sub_X_sq_eq_catalan"
+submitter = "Kim Morrison"
+notes = "The compositional inverse of X - X² is the generating function for Catalan numbers. This is a classical application of Lagrange inversion in enumerative combinatorics, connecting formal power series inversion to Dyck paths, binary trees, and triangulations."
+source = "E. Catalan, Note sur une équation aux différences finies, 1838; J.-L. Lagrange, Nouvelle méthode pour résoudre les équations littérales, 1770."
+informal_solution = "The compositional inverse C(x) satisfies C - C² = x, giving C = (1 - √(1-4x))/2. By the binomial series, its coefficients are the Catalan numbers C_n = (2n choose n)/(n+1)."
+
+[[problem]]
+id = "isStarNormal_mul_of_commute"
+title = "Product of commuting normal elements is normal"
+test = false
+module = "LeanEval.Algebra.NormalProduct"
+theorem = "isStarNormal_mul_of_commute"
+submitter = "Kim Morrison"
+notes = "Uses the Fuglede-Putnam-Rosenblum theorem to show all four of a, star a, b, star b pairwise commute, then verifies the normality condition by direct computation."
+source = "B. Fuglede, A commutativity theorem for normal operators, 1950."
+informal_solution = "From Commute a b and normality, apply Fuglede-Putnam twice to get Commute (star a) b and Commute (star a) (star b). Then star(ab)·(ab) = b*·a*·a·b = b*·a·a*·b (a normal) = a·b*·b·a* (all commute) = a·b·b*·a* (b normal) = (ab)·star(ab)."
+
+[[problem]]
+id = "posSemidef_map_exp"
+title = "Entrywise exponential of a PSD matrix is PSD"
+test = false
+module = "LeanEval.LinearAlgebra.EntrywiseExpPSD"
+theorem = "posSemidef_map_exp"
+submitter = "Kim Morrison"
+notes = "Part of the Schur-Polya-Loewner theory of entrywise functions preserving PSD. The proof uses the Schur product theorem iteratively: exp_⊙(A) = ∑ A^{⊙k}/k!, each Hadamard power is PSD, and the convergent series of PSD matrices is PSD."
+source = "I.J. Schoenberg, Positive definite functions on spheres, 1942."
+informal_solution = "Write exp(a_{ij}) as the convergent series ∑ (a_{ij})^k / k!. The matrix with entries (a_{ij})^k is the k-fold Hadamard product A^{⊙k}, which is PSD by iterated Schur product. The partial sums are nonneg combinations of PSD matrices, hence PSD. PSD is a closed condition, so the limit is PSD."
+
+[[problem]]
+id = "mulCayley_connected_iff_closure_eq_top"
+title = "Cayley graph connected iff generators generate the group"
+test = false
+module = "LeanEval.Combinatorics.CayleyConnected"
+theorem = "mulCayley_connected_iff_closure_eq_top"
+submitter = "Kim Morrison"
+notes = "A foundational result in geometric group theory using the newly defined Cayley graph. Connectivity of the Cayley graph is equivalent to the generating set S generating G as a group."
+source = "A. Cayley, On the theory of groups, as depending on the symbolic equation θ^n = 1, 1878."
+informal_solution = "Forward: if connected, any g ∈ G is reached from 1 by a path, which corresponds to a product of generators. Reverse: if S generates, any g is a product of generators, giving a path from 1 to g."
+
+[[problem]]
+id = "oppenheim_inequality"
+title = "Oppenheim's inequality for Hadamard products"
+test = false
+module = "LeanEval.LinearAlgebra.Oppenheim"
+theorem = "oppenheim_inequality"
+submitter = "Kim Morrison"
+notes = "Oppenheim's 1930 inequality: for PSD matrices A, B, det(A ⊙ B) ≥ det(A) · ∏ᵢ Bᵢᵢ. Uses the Schur product theorem (newly formalized) as a key ingredient."
+source = "I. Schur, Bemerkungen zur Theorie der beschränkten Bilinearformen, 1911; A. Oppenheim, Inequalities connected with definite Hermitian forms, 1930."
+informal_solution = "Use induction on the matrix size, extracting a Schur complement at each step and applying the Schur product theorem to bound the determinant."

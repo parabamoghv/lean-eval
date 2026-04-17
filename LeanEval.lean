@@ -1,4 +1,7 @@
+import LeanEval.Algebra.NormalProduct
 import LeanEval.Analysis.Chudnovsky
+import LeanEval.Combinatorics.CatalanSubstInv
+import LeanEval.Combinatorics.CayleyConnected
 import LeanEval.Combinatorics.MarkoffGraph
 import LeanEval.Combinatorics.Ramsey
 import LeanEval.ComplexAnalysis.ComplementaryPolynomials
@@ -6,6 +9,8 @@ import LeanEval.ComplexAnalysis.Rouche
 import LeanEval.ConvexGeometry.MinkowskiCaratheodory
 import LeanEval.EasyProblems
 import LeanEval.GroupTheory.Burnside
+import LeanEval.LinearAlgebra.EntrywiseExpPSD
+import LeanEval.LinearAlgebra.Oppenheim
 import LeanEval.LinearAlgebra.PerronFrobenius
 import LeanEval.NumberTheory.Lagarias
 import LeanEval.NumberTheory.SmallHouse
