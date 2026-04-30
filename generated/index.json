@@ -217,7 +217,7 @@
   },
   {
     "id": "g2_irrep_tensor_square_decomp",
-    "title": "Tensor square decomposition of a 64-dim irreducible g\u2082-representation",
+    "title": "Existence of a 64-dim irreducible g\u2082-representation with 14 tensor-square isotypic components",
     "test": false,
     "submitter": "Kim Morrison",
     "module": "LeanEval.RepresentationTheory.ExceptionalLieTensorSquare",
@@ -226,7 +226,7 @@
   },
   {
     "id": "e8_irrep_tensor_square_decomp",
-    "title": "Tensor square decomposition of a 779247-dim irreducible e\u2088-representation",
+    "title": "Existence of a 779247-dim irreducible e\u2088-representation with 40 tensor-square isotypic components",
     "test": false,
     "submitter": "Kim Morrison",
     "module": "LeanEval.RepresentationTheory.ExceptionalLieTensorSquare",
