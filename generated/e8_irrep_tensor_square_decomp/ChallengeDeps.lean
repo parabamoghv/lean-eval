@@ -6,22 +6,32 @@ namespace RepresentationTheory
 open scoped TensorProduct
 
 /-!
-Tensor square decomposition for irreducible representations of g₂ and e₈
+Existential tensor-square problems for irreducible representations of g₂ and e₈
 defined by the Serre construction.
 
-For each of the exceptional Lie algebras g₂ and e₈ over ℂ, the irreducible
-representation with highest weight `ω₁ + ω_n` (the sum of the first and last
-fundamental weights, in Bourbaki labelling) has a particular dimension `d`,
-and its tensor square decomposes into `k` isotypic components (counted as
+For each of the exceptional Lie algebras g₂ and e₈ over ℂ, we ask only for the
+existence of an irreducible representation `V` of a specified dimension whose
+tensor square has a specified number of isotypic components (counted as
 distinct isomorphism classes of irreducible Lie submodules):
 
-* g₂: dim V = 64,     k = 14   (highest weight ω₁ + ω₂)
-* e₈: dim V = 779247, k = 40   (highest weight ω₁ + ω₈)
+* g₂: dim V = 64,     `V ⊗ V` has 14 isotypic components
+* e₈: dim V = 779247, `V ⊗ V` has 40 isotypic components
 
-Mathlib's `isotypicComponents` is defined for modules over a ring. To use it
-on a Lie module `M`, we transport the action through the universal enveloping
-algebra: a `LieModule R L M` extends to a `Module (UniversalEnvelopingAlgebra R L) M`
-via the universal property.
+In the intended solution, one exhibits `V` as the highest-weight
+representation `ω₁ + ω_n` (the sum of the first and last fundamental weights,
+in Bourbaki labelling):
+
+* g₂: highest weight `ω₁ + ω₂`
+* e₈: highest weight `ω₁ + ω₈`
+
+Mathlib does not yet package the highest-weight classification needed to state
+those descriptions directly, so they serve here as mathematical guidance for
+constructing a witness rather than as part of the formal theorem statement.
+
+Mathlib's `isotypicComponents` is defined for modules over a ring. To use it on
+a Lie module `M`, we transport the action through the universal enveloping
+algebra: a `LieModule R L M` extends to a
+`Module (UniversalEnvelopingAlgebra R L) M` via the universal property.
 -/
 
 noncomputable instance lieModuleToEnvelopingModule
