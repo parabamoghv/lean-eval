@@ -17,8 +17,8 @@ for `t > 0`, and extend by `u(t, x) := f x` for `t ≤ 0`. Then on `(0, ∞) × 
 and `u(t, x) → f x` as `t ↓ 0` for every `x`.
 
 This is a substantial benchmark because it exercises differentiation under the integral
-sign, the explicit Gaussian integral evaluation, dominated convergence, and the heat-PDE
-identity satisfied by the kernel itself.
+sign, the explicit Gaussian integral evaluation, approximate-identity arguments for the
+initial trace, and the heat-PDE identity satisfied by the kernel itself.
 
 The PDE statement asserts the existence of the spatial first and second derivatives at
 each `(t, x)` with `t > 0`, and equates the time derivative of `u` to the spatial second
