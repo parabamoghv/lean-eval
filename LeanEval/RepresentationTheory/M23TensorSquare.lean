@@ -17,7 +17,7 @@ into exactly `4` isotypic components.
 Mathematical witness. Take `G = M₂₃` acting on the deleted permutation
 representation of its 4-transitive action on 23 points. Let `V` be the
 corresponding 22-dimensional irreducible. Then
-* `Sym² V` is the deleted permutation representation on the `(23 choose 2) = 253`
+* `Sym² V` is the permutation representation on the `(23 choose 2) = 253`
   unordered pairs, decomposing as `1 ⊕ V ⊕ W` where `W` is a 230-dimensional
   irreducible.
 * `Λ² V` is irreducible of dimension `231` (one of the three 231-dim irreps).
@@ -30,8 +30,9 @@ group from scratch (e.g. as a subgroup of `S₂₃` via generators of the Steine
 system `S(4,7,23)`, or from the automorphism group of an extended ternary Golay
 code, etc.). The statement does not pin down `M₂₃` uniquely (other groups of
 the same order with a 22-dim irrep of the right tensor-square structure would
-also satisfy the existential), but constructing such a witness is essentially
-equivalent to constructing `M₂₃`.
+also satisfy the existential), but while this does not technically require
+constructing `M₂₃` and studying its representation theory, we suspect that in
+practice it does.
 
 The `MonoidAlgebra ℂ G`-module structures on `V` and `V ⊗[ℂ] V` are bound
 explicitly. The `IsScalarTower` constraints anchor them to the underlying
