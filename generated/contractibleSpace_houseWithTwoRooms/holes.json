@@ -1,0 +1,12 @@
+{
+  "id": "contractibleSpace_houseWithTwoRooms",
+  "module": "LeanEval.Topology.HouseWithTwoRooms",
+  "holes": [
+    {
+      "name": "LeanEval.Topology.contractibleSpace_houseWithTwoRooms",
+      "basename": "contractibleSpace_houseWithTwoRooms",
+      "kind": "theorem",
+      "body": "theorem contractibleSpace_houseWithTwoRooms : ContractibleSpace HouseWithTwoRooms := by\n  sorry"
+    }
+  ]
+}

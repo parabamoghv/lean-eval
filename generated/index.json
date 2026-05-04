@@ -605,6 +605,17 @@
     "generated_path": "generated/heat_kernel_solves_heat_equation"
   },
   {
+    "id": "contractibleSpace_houseWithTwoRooms",
+    "title": "Bing's house with two rooms is contractible",
+    "test": false,
+    "submitter": "Junyan Xu",
+    "module": "LeanEval.Topology.HouseWithTwoRooms",
+    "holes": [
+      "contractibleSpace_houseWithTwoRooms"
+    ],
+    "generated_path": "generated/contractibleSpace_houseWithTwoRooms"
+  },
+  {
     "id": "fermat_last_theorem",
     "title": "Fermat's Last Theorem",
     "test": false,
