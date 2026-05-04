@@ -2,7 +2,8 @@ import Mathlib
 import Submission
 
 theorem sturm_separation (p q y₁ y₂ : ℝ → ℝ) (a b : ℝ) (hab : a < b)
-    (J : Set ℝ) (hJ_open : IsOpen J) (hJ_sub : Set.Icc a b ⊆ J)
+    (J : Set ℝ) (hJ_open : IsOpen J) (hJ_conn : IsPreconnected J)
+    (hJ_sub : Set.Icc a b ⊆ J)
     (hp : ContinuousOn p J) (hq : ContinuousOn q J)
     (hy₁ : ∀ x ∈ J, HasDerivAt y₁ (deriv y₁ x) x)
     (hy₁' : ∀ x ∈ J, HasDerivAt (deriv y₁) (-(p x * deriv y₁ x + q x * y₁ x)) x)
@@ -12,4 +13,4 @@ theorem sturm_separation (p q y₁ y₂ : ℝ → ℝ) (a b : ℝ) (hab : a < b)
     (hza : y₁ a = 0) (hzb : y₁ b = 0)
     (hne : ∀ x ∈ Set.Ioo a b, y₁ x ≠ 0) :
     ∃! c, c ∈ Set.Ioo a b ∧ y₂ c = 0 := by
-  exact Submission.sturm_separation p q y₁ y₂ a b hab J hJ_open hJ_sub hp hq hy₁ hy₁' hy₂ hy₂' hW hza hzb hne
+  exact Submission.sturm_separation p q y₁ y₂ a b hab J hJ_open hJ_conn hJ_sub hp hq hy₁ hy₁' hy₂ hy₂' hW hza hzb hne

@@ -1,7 +1,8 @@
 import Mathlib
 
 theorem sturm_separation (p q y₁ y₂ : ℝ → ℝ) (a b : ℝ) (hab : a < b)
-    (J : Set ℝ) (hJ_open : IsOpen J) (hJ_sub : Set.Icc a b ⊆ J)
+    (J : Set ℝ) (hJ_open : IsOpen J) (hJ_conn : IsPreconnected J)
+    (hJ_sub : Set.Icc a b ⊆ J)
     (hp : ContinuousOn p J) (hq : ContinuousOn q J)
     (hy₁ : ∀ x ∈ J, HasDerivAt y₁ (deriv y₁ x) x)
     (hy₁' : ∀ x ∈ J, HasDerivAt (deriv y₁) (-(p x * deriv y₁ x + q x * y₁ x)) x)
