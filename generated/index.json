@@ -660,6 +660,17 @@
     "generated_path": "generated/neukirch_uchida"
   },
   {
+    "id": "balanceable_bounded_partitions",
+    "title": "Balanceable k-bounded partitions",
+    "test": false,
+    "submitter": "Julia M. Himmel",
+    "module": "LeanEval.Combinatorics.BalanceableBoundedPartitions",
+    "holes": [
+      "minimal_balanceable_of_bounded"
+    ],
+    "generated_path": "generated/balanceable_bounded_partitions"
+  },
+  {
     "id": "permute_to_unimodal",
     "title": "A competition programming problem about permuting a permutation to be unimodal",
     "test": false,
