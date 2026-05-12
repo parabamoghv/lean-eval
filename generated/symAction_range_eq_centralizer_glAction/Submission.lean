@@ -11,6 +11,8 @@ theorem symAction_range_eq_centralizer_glAction {R : Type*} [Field R]
     {k : ℕ} [Invertible (k.factorial : R)] :
     Algebra.adjoin R (Set.range (symAction R M k)) =
       Subalgebra.centralizer R (Set.range (glAction R M k)) := by
-  sorry
+  apply le_antisymm
+  · exact adjoin_symAction_le_centralizer_glAction
+  · exact centralizer_glAction_le_adjoin_symAction
 
 end Submission
