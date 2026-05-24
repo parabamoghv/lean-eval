@@ -702,5 +702,16 @@
       "uniformization"
     ],
     "generated_path": "generated/uniformization"
+  },
+  {
+    "id": "brauer_fowler",
+    "title": "Brauer\u2013Fowler theorem",
+    "test": false,
+    "submitter": "Kim Morrison",
+    "module": "LeanEval.GroupTheory.BrauerFowler",
+    "holes": [
+      "brauer_fowler"
+    ],
+    "generated_path": "generated/brauer_fowler"
   }
 ]
