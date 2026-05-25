@@ -713,5 +713,16 @@
       "brauer_fowler"
     ],
     "generated_path": "generated/brauer_fowler"
+  },
+  {
+    "id": "schauder_fixed_point",
+    "title": "Schauder fixed-point theorem",
+    "test": false,
+    "submitter": "Kim Morrison",
+    "module": "LeanEval.Topology.Schauder",
+    "holes": [
+      "schauder_fixed_point"
+    ],
+    "generated_path": "generated/schauder_fixed_point"
   }
 ]
