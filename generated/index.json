@@ -88,6 +88,17 @@
     "generated_path": "generated/bvp_comparison"
   },
   {
+    "id": "cauchy_kovalevskaya",
+    "title": "Cauchy\u2013Kovalevskaya theorem",
+    "test": false,
+    "submitter": "Kim Morrison",
+    "module": "LeanEval.Analysis.CauchyKovalevskaya",
+    "holes": [
+      "cauchy_kovalevskaya"
+    ],
+    "generated_path": "generated/cauchy_kovalevskaya"
+  },
+  {
     "id": "cerf_gamma_four",
     "title": "Cerf's theorem: every self-diffeomorphism of S3 is smoothly isotopic to a linear isometry",
     "test": false,
@@ -419,6 +430,17 @@
     "generated_path": "generated/green_tao"
   },
   {
+    "id": "hadwiger",
+    "title": "Hadwiger's theorem",
+    "test": false,
+    "submitter": "Kim Morrison",
+    "module": "LeanEval.ConvexGeometry.Hadwiger",
+    "holes": [
+      "hadwiger"
+    ],
+    "generated_path": "generated/hadwiger"
+  },
+  {
     "id": "heat_kernel_solves_heat_equation",
     "title": "Gaussian heat kernel solves the 1D heat equation",
     "test": false,
@@ -572,6 +594,17 @@
     "generated_path": "generated/lidskii_inequality"
   },
   {
+    "id": "lidskii_last",
+    "title": "Lidskii\u2013Last eigenvalue-perturbation theorem",
+    "test": false,
+    "submitter": "Kim Morrison",
+    "module": "LeanEval.LinearAlgebra.Lidskii",
+    "holes": [
+      "lidskii_last"
+    ],
+    "generated_path": "generated/lidskii_last"
+  },
+  {
     "id": "linear_ode_asymptotic_stability",
     "title": "Linear ODE with negative-real-part eigenvalues is asymptotically stable",
     "test": false,
@@ -702,6 +735,17 @@
       "ornstein_weiss_rokhlin"
     ],
     "generated_path": "generated/ornstein_weiss_rokhlin"
+  },
+  {
+    "id": "parallel_postulate_independent",
+    "title": "Independence of the parallel postulate",
+    "test": false,
+    "submitter": "Kim Morrison",
+    "module": "LeanEval.Geometry.ParallelPostulate",
+    "holes": [
+      "parallel_postulate_independent"
+    ],
+    "generated_path": "generated/parallel_postulate_independent"
   },
   {
     "id": "permute_to_unimodal",
@@ -922,6 +966,17 @@
       "smale_conjecture"
     ],
     "generated_path": "generated/smale_conjecture"
+  },
+  {
+    "id": "sturm",
+    "title": "Sturm's theorem",
+    "test": false,
+    "submitter": "Kim Morrison",
+    "module": "LeanEval.Algebra.Sturm",
+    "holes": [
+      "sturm"
+    ],
+    "generated_path": "generated/sturm"
   },
   {
     "id": "sturm_separation",
