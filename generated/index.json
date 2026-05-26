@@ -243,6 +243,17 @@
     "generated_path": "generated/e8_irrep_tensor_square_decomp"
   },
   {
+    "id": "erdos_unit_distance_conjecture_false",
+    "title": "Erd\u0151s's unit-distance conjecture is false",
+    "test": false,
+    "submitter": "Kim Morrison",
+    "module": "LeanEval.Combinatorics.UnitDistanceConjectureFalse",
+    "holes": [
+      "erdos_unit_distance_conjecture_false"
+    ],
+    "generated_path": "generated/erdos_unit_distance_conjecture_false"
+  },
+  {
     "id": "exists_chiral_knot",
     "title": "Existence of a chiral oriented knot",
     "test": false,
@@ -1065,6 +1076,17 @@
       "uniformization"
     ],
     "generated_path": "generated/uniformization"
+  },
+  {
+    "id": "unit_distance_upper_bound",
+    "title": "Spencer-Szemer\u00e9di-Trotter unit-distance upper bound",
+    "test": false,
+    "submitter": "Kim Morrison",
+    "module": "LeanEval.Combinatorics.UnitDistanceUpperBound",
+    "holes": [
+      "unit_distance_upper_bound"
+    ],
+    "generated_path": "generated/unit_distance_upper_bound"
   },
   {
     "id": "variable_binder_example",
