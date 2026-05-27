@@ -67,7 +67,12 @@ variable {K : Type*} [Field K]
 abbrev ProjSpace (K : Type*) [DivisionRing K] (n : ℕ) :=
   ℙ K (Fin (n + 1) → K)
 
-/-- The projective vanishing set of a polynomial. -/
+/-- The projective vanishing set, defined by evaluating `f` on a chosen
+representative `Projectivization.rep p`.
+
+This is representative-independent only when `f` is homogeneous of
+positive degree (`f(λv) = λᵈ f(v)`); the theorem below uses it only
+under that hypothesis. -/
 def vanishingSet {n : ℕ} (f : MvPolynomial (Fin (n + 1)) K) :
     Set (ProjSpace K n) :=
   {p | MvPolynomial.eval (Projectivization.rep p) f = 0}
@@ -126,13 +131,19 @@ noncomputable def intersectionMultiplicity {n : ℕ}
   Module.length K (localRingAt q ⧸ I)
 
 /-- **Bézout's theorem (with multiplicity).** Given `n` homogeneous
-polynomials `f_k` in `n + 1` variables of degrees `d_k ≥ 1` over an
-algebraically closed field with finite common projective zero set, the
-sum of intersection multiplicities equals `∏ d_k`. -/
+polynomials `f_k` in `n + 1` variables, each of total degree exactly
+`d_k ≥ 1`, over an algebraically closed field with finite common
+projective zero set, the sum of intersection multiplicities equals
+`∏ d_k`.
+
+The `totalDegree` hypothesis rules out the zero polynomial (which is
+`IsHomogeneous d` for every `d` but has `totalDegree = 0`), matching
+the textbook convention that `d_k = deg f_k`. -/
 @[eval_problem]
 theorem bezout_multiplicity [IsAlgClosed K] {n : ℕ}
     (f : Fin n → MvPolynomial (Fin (n + 1)) K)
     (d : Fin n → ℕ) (_hd : ∀ k, (f k).IsHomogeneous (d k))
+    (_hdeg : ∀ k, (f k).totalDegree = d k)
     (_hd_pos : ∀ k, 1 ≤ d k)
     (_hfin : (⋂ k, vanishingSet (f k)).Finite) :
     ∑ᶠ p ∈ (⋂ k, vanishingSet (f k)), intersectionMultiplicity f p
