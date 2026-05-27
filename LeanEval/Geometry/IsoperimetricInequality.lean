@@ -57,12 +57,14 @@ abbrev E (n : ℕ) := EuclideanSpace ℝ (Fin n)
 `B ⊆ ℝⁿ` with `n ≥ 2`,
 `n^n · volume B^{n−1} · volume (closedBall 0 1) ≤ μHE[n−1] (frontier B)^n`,
 with `volume` the standard Lebesgue volume on `EuclideanSpace ℝ (Fin n)`
-and `μHE[n−1]` the `(n−1)`-dimensional Euclidean Hausdorff measure. The
-smooth-surface case Knill states is a special case where
-`μHE[n−1] (frontier B)` equals the classical surface integral. -/
+and `μHE[n−1]` the `(n−1)`-dimensional Euclidean Hausdorff measure on
+the topological frontier. For a smooth bounded domain with smooth
+bounding hypersurface `S = frontier B`, `μHE[n−1] (frontier B)` agrees
+with the classical surface area, so the statement specialises to
+Knill's smooth-surface form. -/
 @[eval_problem]
 theorem isoperimetric (n : ℕ) (_hn : 2 ≤ n) (B : Set (E n))
-    (_hB : MeasurableSet B) (_hBvol : volume B ≠ ⊤) :
+    (_hB : MeasurableSet B) (_hBdd : Bornology.IsBounded B) :
     (n : ℝ≥0∞) ^ n * (volume B) ^ (n - 1) * volume (closedBall (0 : E n) 1)
       ≤ (μHE[n - 1] (frontier B)) ^ n := by
   sorry
