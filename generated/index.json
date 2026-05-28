@@ -726,6 +726,17 @@
     "generated_path": "generated/milnor_exotic_sphere_seven"
   },
   {
+    "id": "morley_categoricity_theorem",
+    "title": "Morley's categoricity theorem",
+    "test": false,
+    "submitter": "A. M. Berns",
+    "module": "LeanEval.ModelTheory.MorleyCategoricity",
+    "holes": [
+      "morley_categoricity_theorem"
+    ],
+    "generated_path": "generated/morley_categoricity_theorem"
+  },
+  {
     "id": "morse_inequality",
     "title": "Morse inequalities",
     "test": false,
