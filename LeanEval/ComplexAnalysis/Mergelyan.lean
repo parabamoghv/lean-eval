@@ -5,25 +5,14 @@ namespace LeanEval
 namespace ComplexAnalysis
 
 /-!
-# Mergelyan's theorem (Sergey Mergelyan, 1951)
+# Mergelyan's theorem
 
-§64 (additional statement 4) of Knill's *Some Fundamental Theorems in
-Mathematics*. For a compact `K ⊆ ℂ` with connected complement, every
-continuous `f : ℂ → ℂ` that is holomorphic on the interior of `K` is the
-uniform limit on `K` of complex polynomials.
+For a compact set `K ⊆ ℂ` with connected complement, every function
+continuous on `K` and holomorphic on `interior K` is uniformly
+approximable on `K` by complex polynomials.
 
-Mergelyan extends Runge's theorem (rational approximation on compact
-sets) to polynomial approximation under the connected-complement
-hypothesis, and extends Weierstrass approximation from real intervals
-to complex compacts in ℂ.
-
-Mathlib has Weierstrass and Stone–Weierstrass for `C([a, b], ℝ)` and
-the Bernstein approximation, but `grep -rn 'mergelyan'` in mathlib
-returns no hits. Aristotle proved the entire-function step
-`entire_to_poly` (Taylor partial sums approximate entire functions
-uniformly on compacta) sorry-free, and reduced Mergelyan to
-`entire_approx` — the ∂̄-equation step that needs the Cauchy–Green /
-Pompeiu operator, not in mathlib.
+This is the standard polynomial-approximation form of Mergelyan's
+theorem.
 -/
 
 open scoped Polynomial
