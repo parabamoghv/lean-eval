@@ -704,6 +704,17 @@
     "generated_path": "generated/m23_irrep_tensor_square_decomp"
   },
   {
+    "id": "mandelbrot_connected",
+    "title": "Mandelbrot set is connected (Douady\u2013Hubbard)",
+    "test": false,
+    "submitter": "Kim Morrison",
+    "module": "LeanEval.ComplexAnalysis.Mandelbrot",
+    "holes": [
+      "mandelbrot_connected"
+    ],
+    "generated_path": "generated/mandelbrot_connected"
+  },
+  {
     "id": "mem_convexHull_finset_extremePoints_of_mem_compact_convex",
     "title": "Minkowski-Caratheodory theorem",
     "test": false,
