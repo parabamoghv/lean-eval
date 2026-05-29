@@ -5,28 +5,19 @@ namespace LeanEval
 namespace ComplexAnalysis
 
 /-!
-# Mandelbar (tricorn) is not path-connected (Hubbard–Inou–Schleicher, 2009)
+# Mandelbar (tricorn) is not path-connected
 
-§62 (additional statement 2) of Knill's *Some Fundamental Theorems in
-Mathematics*. The **mandelbar set** (also called the *tricorn*) is the
-connectedness locus of the antiholomorphic family `z ↦ z̄² + c`:
-`Mandelbar = { c ∈ ℂ | (T̄_c)^n(0) stays bounded }`. The Hubbard–Inou–
-Schleicher theorem states that the mandelbar is **not** path-connected.
+The `d = 2` case of Hubbard–Schleicher's theorem that multicorns — the
+connectedness loci of unicritical antiholomorphic polynomials
+`z ↦ z̄^d + c` — are not path-connected for `d ≥ 2`. For `d = 2` the
+multicorn is the mandelbar / tricorn, the connectedness locus of
+`z ↦ z̄² + c`.
 
-## Note on Knill's typo
-
-Knill writes the antiholomorphic iterator as `z ↦ z̄ + c` (degree 1).
-With that literal map the orbit of `0` is
-`0, c, 2 Re c, 2 Re c + c, …`, bounded iff `Re c = 0`, so the
-connectedness locus is the imaginary axis — which **is** path-connected,
-contradicting the claim. The result Knill refers to is the standard
-**degree-2** mandelbar / tricorn `z ↦ z̄² + c` of Hubbard–Inou–Schleicher;
-this file formalises that (corrected) statement.
-
-Mathlib has `Function.iterate`, `IsPathConnected`, and `starRingEnd ℂ`
-for complex conjugation, but no mandelbar / tricorn definition. The
-proof uses parabolic-implosion arguments on the parabolic-arc ears of
-the mandelbar's hyperbolic components (Hubbard–Inou–Schleicher 2009).
+Knill lists this as §62 additional statement 2 but writes the iterator
+as `z ↦ z̄ + c` (degree 1). That literal map has bounded critical orbit
+iff `Re c = 0`, so its connectedness locus is the imaginary axis —
+path-connected, contradicting the claim. The formal statement here
+uses the standard quadratic antiholomorphic family `z ↦ z̄² + c`.
 -/
 
 open Function
@@ -38,7 +29,7 @@ def Tantibar (c : ℂ) (z : ℂ) : ℂ := (starRingEnd ℂ z) ^ 2 + c
 def Mandelbar : Set ℂ :=
   { c : ℂ | ∃ M : ℝ, ∀ n : ℕ, ‖(Tantibar c)^[n] 0‖ ≤ M }
 
-/-- **The mandelbar is not path-connected** (Hubbard–Inou–Schleicher, 2009). -/
+/-- **The mandelbar (tricorn) is not path-connected** (Hubbard–Schleicher). -/
 @[eval_problem]
 theorem mandelbar_not_path_connected : ¬ IsPathConnected Mandelbar := by
   sorry
