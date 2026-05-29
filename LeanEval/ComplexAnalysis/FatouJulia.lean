@@ -3,6 +3,7 @@ import EvalTools.Markers
 
 namespace LeanEval
 namespace ComplexAnalysis
+namespace FatouJuliaProblem
 
 /-!
 # Fatou–Julia / Cantor dichotomy
@@ -42,5 +43,6 @@ theorem julia_cantor_dichotomy (c : ℂ) :
     (c ∉ Mandelbrot → Nonempty ((FilledJulia c) ≃ₜ (ℕ → Bool))) := by
   sorry
 
+end FatouJuliaProblem
 end ComplexAnalysis
 end LeanEval

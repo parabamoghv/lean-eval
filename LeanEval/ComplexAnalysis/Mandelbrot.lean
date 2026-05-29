@@ -3,6 +3,7 @@ import EvalTools.Markers
 
 namespace LeanEval
 namespace ComplexAnalysis
+namespace MandelbrotProblem
 
 /-!
 # Mandelbrot set is connected (Douady–Hubbard)
@@ -27,5 +28,6 @@ def Mandelbrot : Set ℂ :=
 theorem mandelbrot_connected : IsConnected Mandelbrot := by
   sorry
 
+end MandelbrotProblem
 end ComplexAnalysis
 end LeanEval
