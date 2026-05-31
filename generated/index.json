@@ -574,6 +574,17 @@
     "generated_path": "generated/hadwiger"
   },
   {
+    "id": "halmos_generic_weak_mixing",
+    "title": "Halmos's generic weak-mixing theorem",
+    "test": false,
+    "submitter": "Kim Morrison",
+    "module": "LeanEval.Dynamics.HalmosGenericWeakMixing",
+    "holes": [
+      "generic_weakly_mixing"
+    ],
+    "generated_path": "generated/halmos_generic_weak_mixing"
+  },
+  {
     "id": "heat_kernel_solves_heat_equation",
     "title": "Gaussian heat kernel solves the 1D heat equation",
     "test": false,
