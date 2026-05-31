@@ -1257,6 +1257,17 @@
     "generated_path": "generated/solvable_by_radicals_converse"
   },
   {
+    "id": "space_groups_230",
+    "title": "230 space groups (Fedorov 1891 / Schoenflies 1891)",
+    "test": false,
+    "submitter": "Kim Morrison",
+    "module": "LeanEval.Geometry.SpaceGroups",
+    "holes": [
+      "space_groups"
+    ],
+    "generated_path": "generated/space_groups_230"
+  },
+  {
     "id": "sturm",
     "title": "Sturm's theorem",
     "test": false,
