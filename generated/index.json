@@ -1,5 +1,16 @@
 [
   {
+    "id": "anosov_bowen_shadowing",
+    "title": "Anosov\u2013Bowen shadowing lemma",
+    "test": false,
+    "submitter": "Kim Morrison",
+    "module": "LeanEval.Dynamics.HyperbolicShadowing",
+    "holes": [
+      "hyperbolic_has_shadowing"
+    ],
+    "generated_path": "generated/anosov_bowen_shadowing"
+  },
+  {
     "id": "baer_suzuki",
     "title": "Baer\u2013Suzuki theorem",
     "test": false,
