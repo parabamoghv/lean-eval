@@ -1400,6 +1400,17 @@
     "generated_path": "generated/vonNeumann_doubleCommutant_tfae"
   },
   {
+    "id": "wallpaper_groups_17",
+    "title": "Seventeen wallpaper groups (P\u00f3lya\u2013Niggli 1924)",
+    "test": false,
+    "submitter": "Kim Morrison",
+    "module": "LeanEval.Geometry.WallpaperGroups",
+    "holes": [
+      "there_are_17_wallpaper_groups"
+    ],
+    "generated_path": "generated/wallpaper_groups_17"
+  },
+  {
     "id": "weak_morse_inequality",
     "title": "Weak Morse inequalities",
     "test": false,
