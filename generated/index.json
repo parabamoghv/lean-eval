@@ -1389,6 +1389,17 @@
     "generated_path": "generated/weak_morse_inequality"
   },
   {
+    "id": "whitney_embedding",
+    "title": "Whitney embedding theorem (strong form, dimension 2n)",
+    "test": false,
+    "submitter": "Kim Morrison",
+    "module": "LeanEval.Geometry.WhitneyEmbedding",
+    "holes": [
+      "whitney_embedding"
+    ],
+    "generated_path": "generated/whitney_embedding"
+  },
+  {
     "id": "wigner_semicircle",
     "title": "Wigner semicircle law",
     "test": false,
