@@ -705,6 +705,17 @@
     "generated_path": "generated/kakutani_fixed_point"
   },
   {
+    "id": "kepler_conjecture",
+    "title": "Kepler conjecture (optimal sphere packing in \u211d\u00b3)",
+    "test": false,
+    "submitter": "Kim Morrison",
+    "module": "LeanEval.Geometry.KeplerConjecture",
+    "holes": [
+      "kepler_conjecture"
+    ],
+    "generated_path": "generated/kepler_conjecture"
+  },
+  {
     "id": "kolmogorov_arnold_superposition",
     "title": "Kolmogorov\u2013Arnold superposition theorem (non-universal Lorentz form)",
     "test": false,
