@@ -1,5 +1,16 @@
 [
   {
+    "id": "abel_ruffini",
+    "title": "Abel\u2013Ruffini theorem",
+    "test": false,
+    "submitter": "Kim Morrison",
+    "module": "LeanEval.Algebra.AbelRuffini",
+    "holes": [
+      "abel_ruffini"
+    ],
+    "generated_path": "generated/abel_ruffini"
+  },
+  {
     "id": "anosov_bowen_shadowing",
     "title": "Anosov\u2013Bowen shadowing lemma",
     "test": false,
@@ -42,6 +53,17 @@
       "minimal_balanceable_of_bounded"
     ],
     "generated_path": "generated/balanceable_bounded_partitions"
+  },
+  {
+    "id": "banach_alaoglu_bourbaki",
+    "title": "Bourbaki's locally convex extension of Banach\u2013Alaoglu",
+    "test": false,
+    "submitter": "Kim Morrison",
+    "module": "LeanEval.Analysis.BanachAlaoglu",
+    "holes": [
+      "banach_alaoglu_bourbaki"
+    ],
+    "generated_path": "generated/banach_alaoglu_bourbaki"
   },
   {
     "id": "bezout_projective_multiplicity",
@@ -329,6 +351,17 @@
       "erdos_unit_distance_conjecture_false"
     ],
     "generated_path": "generated/erdos_unit_distance_conjecture_false"
+  },
+  {
+    "id": "euler_lagrange_equation",
+    "title": "Euler\u2013Lagrange equation",
+    "test": false,
+    "submitter": "Kim Morrison",
+    "module": "LeanEval.Analysis.EulerLagrange",
+    "holes": [
+      "euler_lagrange_equation"
+    ],
+    "generated_path": "generated/euler_lagrange_equation"
   },
   {
     "id": "exists_chiral_knot",
@@ -903,6 +936,17 @@
     "generated_path": "generated/milnor_exotic_sphere_seven"
   },
   {
+    "id": "monge_kantorovich",
+    "title": "Monge\u2013Kantorovich existence theorem",
+    "test": false,
+    "submitter": "Kim Morrison",
+    "module": "LeanEval.Analysis.OptimalTransport",
+    "holes": [
+      "monge_kantorovich_exists"
+    ],
+    "generated_path": "generated/monge_kantorovich"
+  },
+  {
     "id": "morley_categoricity_theorem",
     "title": "Morley's categoricity theorem",
     "test": false,
@@ -1013,6 +1057,17 @@
       "parallel_postulate_independent"
     ],
     "generated_path": "generated/parallel_postulate_independent"
+  },
+  {
+    "id": "pell_solution_convergent",
+    "title": "Pell solutions are convergents of \u221ad",
+    "test": false,
+    "submitter": "Kim Morrison",
+    "module": "LeanEval.NumberTheory.PellConvergent",
+    "holes": [
+      "pell_solution_is_convergent"
+    ],
+    "generated_path": "generated/pell_solution_convergent"
   },
   {
     "id": "permute_to_unimodal",
@@ -1486,6 +1541,17 @@
       "whitney_embedding"
     ],
     "generated_path": "generated/whitney_embedding"
+  },
+  {
+    "id": "wiener_atom_detection",
+    "title": "Wiener's atom-detection formula",
+    "test": false,
+    "submitter": "Kim Morrison",
+    "module": "LeanEval.Analysis.WienerAtom",
+    "holes": [
+      "wiener_atom_detection"
+    ],
+    "generated_path": "generated/wiener_atom_detection"
   },
   {
     "id": "wigner_semicircle",
