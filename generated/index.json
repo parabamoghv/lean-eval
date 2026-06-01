@@ -497,6 +497,18 @@
     "generated_path": "generated/five_transitive_card_classification"
   },
   {
+    "id": "fourier_dirichlet_fejer",
+    "title": "Pointwise and Ces\u00e0ro convergence of Fourier series (Dirichlet, Fej\u00e9r)",
+    "test": false,
+    "submitter": "Kim Morrison",
+    "module": "LeanEval.Analysis.FourierConvergence",
+    "holes": [
+      "dirichlet_pointwise",
+      "fejer"
+    ],
+    "generated_path": "generated/fourier_dirichlet_fejer"
+  },
+  {
     "id": "frobenius_kernel_isNormal",
     "title": "Frobenius's theorem: the Frobenius kernel is normal",
     "test": false,
@@ -868,6 +880,18 @@
       "list_append_singleton_length"
     ],
     "generated_path": "generated/list_append_singleton_length"
+  },
+  {
+    "id": "lp_maximum_principle",
+    "title": "Linear programming: maximum principle and vertex optimality",
+    "test": false,
+    "submitter": "Kim Morrison",
+    "module": "LeanEval.ConvexGeometry.LinearProgramming",
+    "holes": [
+      "lp_maximum_principle",
+      "simplex_algorithm"
+    ],
+    "generated_path": "generated/lp_maximum_principle"
   },
   {
     "id": "m23_irrep_tensor_square_decomp",
