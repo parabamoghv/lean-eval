@@ -521,6 +521,17 @@
     "generated_path": "generated/fourier_dirichlet_fejer"
   },
   {
+    "id": "fraser_kakeya_fourier_decay",
+    "title": "Fraser: Fourier decay for finite-field Kakeya sets is q^{-1} and sharp",
+    "test": false,
+    "submitter": "Kim Morrison",
+    "module": "LeanEval.Combinatorics.FraserKakeya",
+    "holes": [
+      "fraser_kakeya_fourier_decay_and_sharp"
+    ],
+    "generated_path": "generated/fraser_kakeya_fourier_decay"
+  },
+  {
     "id": "frobenius_kernel_isNormal",
     "title": "Frobenius's theorem: the Frobenius kernel is normal",
     "test": false,
