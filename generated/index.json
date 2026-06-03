@@ -1095,6 +1095,17 @@
     "generated_path": "generated/neukirch_uchida"
   },
   {
+    "id": "novikov_unsolvable",
+    "title": "Novikov's theorem: the word problem is undecidable for finitely presented groups",
+    "test": false,
+    "submitter": "Kim Morrison",
+    "module": "LeanEval.GroupTheory.NovikovUnsolvable",
+    "holes": [
+      "novikov_unsolvable"
+    ],
+    "generated_path": "generated/novikov_unsolvable"
+  },
+  {
     "id": "oppenheim_inequality",
     "title": "Oppenheim's inequality for Hadamard products",
     "test": false,
