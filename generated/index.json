@@ -77,6 +77,17 @@
     "generated_path": "generated/bezout_projective_multiplicity"
   },
   {
+    "id": "boone_higman_simple",
+    "title": "Kuznetsov's theorem: finitely presented simple groups have solvable word problem",
+    "test": false,
+    "submitter": "Kim Morrison",
+    "module": "LeanEval.GroupTheory.BooneHigmanSimple",
+    "holes": [
+      "boone_higman_simple"
+    ],
+    "generated_path": "generated/boone_higman_simple"
+  },
+  {
     "id": "brauer_character_in_cyclotomic",
     "title": "Character values of finite groups lie in cyclotomic fields",
     "test": false,
