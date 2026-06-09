@@ -11,6 +11,17 @@
     "generated_path": "generated/abel_ruffini"
   },
   {
+    "id": "alternating_sign_matrix_count",
+    "title": "The alternating sign matrix theorem",
+    "test": false,
+    "submitter": "Kim Morrison",
+    "module": "LeanEval.Combinatorics.AlternatingSignMatrix",
+    "holes": [
+      "alternating_sign_matrix_count"
+    ],
+    "generated_path": "generated/alternating_sign_matrix_count"
+  },
+  {
     "id": "anosov_bowen_shadowing",
     "title": "Anosov\u2013Bowen shadowing lemma",
     "test": false,
@@ -960,6 +971,17 @@
     "generated_path": "generated/jordan_curve"
   },
   {
+    "id": "jordan_normal_form",
+    "title": "Jordan normal form",
+    "test": false,
+    "submitter": "Kim Morrison",
+    "module": "LeanEval.LinearAlgebra.JordanNormalForm",
+    "holes": [
+      "jordan_normal_form"
+    ],
+    "generated_path": "generated/jordan_normal_form"
+  },
+  {
     "id": "kakutani_fixed_point",
     "title": "Kakutani fixed-point theorem",
     "test": false,
@@ -1256,6 +1278,17 @@
       "morley_categoricity_theorem"
     ],
     "generated_path": "generated/morley_categoricity_theorem"
+  },
+  {
+    "id": "morley_theorem",
+    "title": "Morley's trisector theorem",
+    "test": false,
+    "submitter": "Kim Morrison",
+    "module": "LeanEval.Geometry.Morley",
+    "holes": [
+      "morley_theorem"
+    ],
+    "generated_path": "generated/morley_theorem"
   },
   {
     "id": "morse_inequality",
@@ -1590,6 +1623,17 @@
     "generated_path": "generated/riemann_hypothesis_iff_lagarias_elementary_criterion"
   },
   {
+    "id": "rising_sun_lemma",
+    "title": "Riesz's rising sun lemma",
+    "test": false,
+    "submitter": "Kim Morrison",
+    "module": "LeanEval.Analysis.RisingSun",
+    "holes": [
+      "rising_sun_lemma"
+    ],
+    "generated_path": "generated/rising_sun_lemma"
+  },
+  {
     "id": "rokhlin_lemma",
     "title": "Rokhlin lemma",
     "test": false,
@@ -1698,6 +1742,17 @@
       "smale_conjecture"
     ],
     "generated_path": "generated/smale_conjecture"
+  },
+  {
+    "id": "smooth_knot_has_quadrisecant",
+    "title": "Pannwitz\u2013Kuperberg quadrisecant theorem",
+    "test": false,
+    "submitter": "Kim Morrison",
+    "module": "LeanEval.KnotTheory.Quadrisecant",
+    "holes": [
+      "smooth_knot_has_quadrisecant"
+    ],
+    "generated_path": "generated/smooth_knot_has_quadrisecant"
   },
   {
     "id": "sobolev_embedding_morrey",
@@ -1852,6 +1907,17 @@
       "classification_of_surfaces"
     ],
     "generated_path": "generated/topological_classification_of_surfaces"
+  },
+  {
+    "id": "tverberg_theorem",
+    "title": "Tverberg's theorem",
+    "test": false,
+    "submitter": "Kim Morrison",
+    "module": "LeanEval.Combinatorics.Tverberg",
+    "holes": [
+      "tverberg_theorem"
+    ],
+    "generated_path": "generated/tverberg_theorem"
   },
   {
     "id": "two_plus_two",
