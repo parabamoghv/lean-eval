@@ -66,6 +66,17 @@
     "generated_path": "generated/banach_alaoglu_bourbaki"
   },
   {
+    "id": "bauer_extreme_point_uniqueness",
+    "title": "Bauer's uniqueness at extreme points",
+    "test": false,
+    "submitter": "Kim Morrison",
+    "module": "LeanEval.Analysis.Choquet",
+    "holes": [
+      "bauer_unique"
+    ],
+    "generated_path": "generated/bauer_extreme_point_uniqueness"
+  },
+  {
     "id": "bezout_projective_multiplicity",
     "title": "B\u00e9zout's theorem (projective, with multiplicity)",
     "test": false,
@@ -185,6 +196,17 @@
       "chebyshev_sign_change"
     ],
     "generated_path": "generated/chebyshev_sign_change"
+  },
+  {
+    "id": "choquet_representation_theorem",
+    "title": "Choquet's representation theorem",
+    "test": false,
+    "submitter": "Kim Morrison",
+    "module": "LeanEval.Analysis.Choquet",
+    "holes": [
+      "choquet"
+    ],
+    "generated_path": "generated/choquet_representation_theorem"
   },
   {
     "id": "chudnovsky_formula_for_pi_inv",
@@ -1709,6 +1731,17 @@
       "whitney_embedding"
     ],
     "generated_path": "generated/whitney_embedding"
+  },
+  {
+    "id": "wieferich_g_three",
+    "title": "Wieferich's theorem g(3) = 9",
+    "test": false,
+    "submitter": "Kim Morrison",
+    "module": "LeanEval.NumberTheory.WieferichNineCubes",
+    "holes": [
+      "wieferich_g_three"
+    ],
+    "generated_path": "generated/wieferich_g_three"
   },
   {
     "id": "wiener_atom_detection",
