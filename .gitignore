@@ -12,5 +12,6 @@ generated/*/lake-manifest.json
 *.trace
 *.tmp
 results/
+aristotle-tracker/
 
 tests/__pycache__/
