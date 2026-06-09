@@ -88,6 +88,17 @@
     "generated_path": "generated/bezout_projective_multiplicity"
   },
   {
+    "id": "boone_higman_embedding",
+    "title": "Boone\u2013Higman theorem (easy direction)",
+    "test": false,
+    "submitter": "Kim Morrison",
+    "module": "LeanEval.GroupTheory.BooneHigmanEmbedding",
+    "holes": [
+      "boone_higman_embedding"
+    ],
+    "generated_path": "generated/boone_higman_embedding"
+  },
+  {
     "id": "boone_higman_simple",
     "title": "Kuznetsov's theorem: finitely presented simple groups have solvable word problem",
     "test": false,
@@ -352,6 +363,17 @@
       "foo_def"
     ],
     "generated_path": "generated/def_hole_example"
+  },
+  {
+    "id": "dehn_sommerville",
+    "title": "Dehn\u2013Sommerville equations for simplicial spheres",
+    "test": false,
+    "submitter": "Kim Morrison",
+    "module": "LeanEval.Combinatorics.DehnSommerville",
+    "holes": [
+      "dehn_sommerville"
+    ],
+    "generated_path": "generated/dehn_sommerville"
   },
   {
     "id": "dirichlet_eigenvalues_eq_nat_sq",
@@ -741,6 +763,17 @@
     "generated_path": "generated/halmos_generic_weak_mixing"
   },
   {
+    "id": "hausdorff_absolute_continuity",
+    "title": "Hausdorff moment problem: absolute-continuity criterion",
+    "test": false,
+    "submitter": "Kim Morrison",
+    "module": "LeanEval.Analysis.HausdorffAbsoluteContinuity",
+    "holes": [
+      "hausdorff_absolute_continuity"
+    ],
+    "generated_path": "generated/hausdorff_absolute_continuity"
+  },
+  {
     "id": "hausdorff_hildebrandt_schoenberg",
     "title": "The Hausdorff\u2013Hildebrandt\u2013Schoenberg moment theorem",
     "test": false,
@@ -785,6 +818,17 @@
     "generated_path": "generated/higman_infinite_simple"
   },
   {
+    "id": "hippocrates_lunes",
+    "title": "Hippocrates' theorem on lunes",
+    "test": false,
+    "submitter": "Kim Morrison",
+    "module": "LeanEval.Geometry.HippocratesLunes",
+    "holes": [
+      "hippocrates_lunes"
+    ],
+    "generated_path": "generated/hippocrates_lunes"
+  },
+  {
     "id": "hopf_rinow",
     "title": "Hopf\u2013Rinow theorem",
     "test": false,
@@ -794,6 +838,17 @@
       "hopf_rinow"
     ],
     "generated_path": "generated/hopf_rinow"
+  },
+  {
+    "id": "hurewicz_h1_abelianization",
+    "title": "Hurewicz theorem in degree 1 (H\u2081 = abelianization of \u03c0\u2081)",
+    "test": false,
+    "submitter": "Kim Morrison",
+    "module": "LeanEval.Topology.Hurewicz",
+    "holes": [
+      "hurewicz_h1_abelianization"
+    ],
+    "generated_path": "generated/hurewicz_h1_abelianization"
   },
   {
     "id": "instance_hole_example",
@@ -1126,6 +1181,17 @@
     "generated_path": "generated/martinet_totally_real_towers"
   },
   {
+    "id": "mazur_torsion",
+    "title": "Mazur's torsion theorem",
+    "test": false,
+    "submitter": "Kim Morrison",
+    "module": "LeanEval.NumberTheory.MazurTorsion",
+    "holes": [
+      "mazur_torsion"
+    ],
+    "generated_path": "generated/mazur_torsion"
+  },
+  {
     "id": "mem_convexHull_finset_extremePoints_of_mem_compact_convex",
     "title": "Minkowski-Caratheodory theorem",
     "test": false,
@@ -1370,6 +1436,17 @@
     "generated_path": "generated/pi_succ_sphere_n_mulEquiv_zmod_two"
   },
   {
+    "id": "pick",
+    "title": "Pick's theorem",
+    "test": false,
+    "submitter": "Kim Morrison",
+    "module": "LeanEval.Geometry.PicksTheorem",
+    "holes": [
+      "pick"
+    ],
+    "generated_path": "generated/pick"
+  },
+  {
     "id": "pin_sphere_n_mulEquiv_int",
     "title": "pi_n of the n-sphere is Z",
     "test": false,
@@ -1489,6 +1566,17 @@
       "radon_can_be_diagonalized_and_pseudo_inverted"
     ],
     "generated_path": "generated/radon_transform_inversion"
+  },
+  {
+    "id": "regular_value_ae",
+    "title": "Sard's regular-value corollary",
+    "test": false,
+    "submitter": "Kim Morrison",
+    "module": "LeanEval.Geometry.RegularValue",
+    "holes": [
+      "regular_value_ae"
+    ],
+    "generated_path": "generated/regular_value_ae"
   },
   {
     "id": "riemann_hypothesis_iff_lagarias_elementary_criterion",
