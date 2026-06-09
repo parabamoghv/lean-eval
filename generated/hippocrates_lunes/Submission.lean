@@ -8,7 +8,7 @@ namespace Submission
 
 theorem hippocrates_lunes (a b : ℝ) (ha : 0 < a) (hb : 0 < b) :
     volume (horizontalLune a b) + volume (verticalLune a b) =
-      volume (rightTriangle a b) := by
-  sorry
+      volume (rightTriangle a b) :=
+  Submission.Helpers.hippocrates_from_lemmas a b ha hb
 
 end Submission
