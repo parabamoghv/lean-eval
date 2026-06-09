@@ -387,6 +387,17 @@
     "generated_path": "generated/e8_irrep_tensor_square_decomp"
   },
   {
+    "id": "entropy_dimension_lyapunov",
+    "title": "Lai-Sang Young entropy\u2013dimension\u2013Lyapunov theorem",
+    "test": false,
+    "submitter": "Kim Morrison",
+    "module": "LeanEval.Dynamics.LaiSangYoung",
+    "holes": [
+      "entropy_dimension_lyapunov"
+    ],
+    "generated_path": "generated/entropy_dimension_lyapunov"
+  },
+  {
     "id": "erdos_unit_distance_conjecture_false",
     "title": "Erd\u0151s's unit-distance conjecture is false",
     "test": false,
@@ -905,6 +916,17 @@
     "generated_path": "generated/kakutani_fixed_point"
   },
   {
+    "id": "kam_invariant_curve",
+    "title": "KAM persistence of an invariant curve",
+    "test": false,
+    "submitter": "Kim Morrison",
+    "module": "LeanEval.Dynamics.KAM",
+    "holes": [
+      "kam_invariant_curve"
+    ],
+    "generated_path": "generated/kam_invariant_curve"
+  },
+  {
     "id": "kepler_conjecture",
     "title": "Kepler conjecture (optimal sphere packing in \u211d\u00b3)",
     "test": false,
@@ -936,6 +958,17 @@
       "koszul_formula"
     ],
     "generated_path": "generated/koszul_formula"
+  },
+  {
+    "id": "landsberg_schaar",
+    "title": "The Landsberg\u2013Schaar relation",
+    "test": false,
+    "submitter": "Kim Morrison",
+    "module": "LeanEval.NumberTheory.LandsbergSchaar",
+    "holes": [
+      "landsberg_schaar"
+    ],
+    "generated_path": "generated/landsberg_schaar"
   },
   {
     "id": "levi_civita_exists_unique",
@@ -1069,6 +1102,17 @@
       "mandelbrot_connected"
     ],
     "generated_path": "generated/mandelbrot_connected"
+  },
+  {
+    "id": "margulis_ruelle",
+    "title": "Margulis\u2013Ruelle inequality",
+    "test": false,
+    "submitter": "Kim Morrison",
+    "module": "LeanEval.Dynamics.LaiSangYoung",
+    "holes": [
+      "margulis_ruelle"
+    ],
+    "generated_path": "generated/margulis_ruelle"
   },
   {
     "id": "martinet_totally_real_towers",
@@ -1282,6 +1326,17 @@
     "generated_path": "generated/permute_to_unimodal"
   },
   {
+    "id": "pesin_formula",
+    "title": "Pesin entropy formula (symplectic surface case)",
+    "test": false,
+    "submitter": "Kim Morrison",
+    "module": "LeanEval.Dynamics.LaiSangYoung",
+    "holes": [
+      "pesin_formula"
+    ],
+    "generated_path": "generated/pesin_formula"
+  },
+  {
     "id": "pi1_circle_mulEquiv_int",
     "title": "pi_1 of the circle is Z",
     "test": false,
@@ -1423,6 +1478,17 @@
       "rado_riemannSurface"
     ],
     "generated_path": "generated/rado_riemannSurface"
+  },
+  {
+    "id": "radon_transform_inversion",
+    "title": "Radon transform: Fourier-slice diagonalization and pseudo-inversion",
+    "test": false,
+    "submitter": "Kim Morrison",
+    "module": "LeanEval.Analysis.RadonTransform",
+    "holes": [
+      "radon_can_be_diagonalized_and_pseudo_inverted"
+    ],
+    "generated_path": "generated/radon_transform_inversion"
   },
   {
     "id": "riemann_hypothesis_iff_lagarias_elementary_criterion",
@@ -1577,6 +1643,28 @@
       "space_groups"
     ],
     "generated_path": "generated/space_groups_230"
+  },
+  {
+    "id": "sphere_theorem_differentiable",
+    "title": "Differentiable sphere theorem (Brendle\u2013Schoen)",
+    "test": false,
+    "submitter": "Kim Morrison",
+    "module": "LeanEval.Geometry.SphereTheorem",
+    "holes": [
+      "differentiable_sphere_theorem"
+    ],
+    "generated_path": "generated/sphere_theorem_differentiable"
+  },
+  {
+    "id": "sphere_theorem_topological",
+    "title": "Topological sphere theorem (Berger\u2013Klingenberg\u2013Rauch)",
+    "test": false,
+    "submitter": "Kim Morrison",
+    "module": "LeanEval.Geometry.SphereTheorem",
+    "holes": [
+      "sphere_theorem"
+    ],
+    "generated_path": "generated/sphere_theorem_topological"
   },
   {
     "id": "stable_unstable_manifolds",
