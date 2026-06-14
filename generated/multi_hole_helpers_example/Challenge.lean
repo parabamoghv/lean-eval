@@ -26,6 +26,7 @@ four failure modes the generator used to have:
 -/
 
 
+
 namespace Helpers
 def first : Nat := sorry
 theorem second_eq : first + rootHelper + preHole = first + 141 := sorry

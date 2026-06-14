@@ -28,6 +28,7 @@ four failure modes the generator used to have:
 
 
 
+
 namespace Submission
 
 open _root_.Helpers.WithCompanions

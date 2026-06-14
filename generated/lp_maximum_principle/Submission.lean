@@ -33,9 +33,12 @@ results.
 open Matrix
 
 
+
 namespace LinearProgram
 
 variable {m n : ℕ}
+
+
 
 
 

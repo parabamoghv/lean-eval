@@ -62,6 +62,12 @@ variable {k : ℕ} {ι X T : Type*}
 
 
 
+
+
+
+
+
+
 /-- **Lemma B.0.1** of Morrison–Walker, *The Blob Complex*
 (arXiv:1009.5025, §B), continuous case. -/
 theorem continuous
