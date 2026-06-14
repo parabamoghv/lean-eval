@@ -10,7 +10,7 @@ namespace Submission
 theorem levi_civita_exists_unique {E : Type*} [NormedAddCommGroup E] [NormedSpace ℝ E]
       [FiniteDimensional ℝ E] [CompleteSpace E]
     {H : Type*} [TopologicalSpace H] {I : ModelWithCorners ℝ E H}
-    {M : Type*} [TopologicalSpace M] [ChartedSpace H M]
+    {M : Type*} [TopologicalSpace M] [T2Space M] [ChartedSpace H M]
       [IsManifold I ∞ M]
     [RiemannianBundle (fun (x : M) ↦ TangentSpace I x)]
     [IsContMDiffRiemannianBundle I ∞ E (fun (x : M) ↦ TangentSpace I x)] :
