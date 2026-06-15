@@ -1890,6 +1890,17 @@
     "generated_path": "generated/stable_unstable_manifolds"
   },
   {
+    "id": "strong_subadditivity",
+    "title": "Strong Subadditivity of von Neumann Entropy",
+    "test": false,
+    "submitter": "Alex Meiburg",
+    "module": "LeanEval.Physics.StrongSubadditivity",
+    "holes": [
+      "strong_subadditivity"
+    ],
+    "generated_path": "generated/strong_subadditivity"
+  },
+  {
     "id": "sturm",
     "title": "Sturm's theorem",
     "test": false,
