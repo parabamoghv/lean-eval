@@ -730,6 +730,17 @@
     "generated_path": "generated/fraser_kakeya_fourier_decay"
   },
   {
+    "id": "frobenius_group_determinant",
+    "title": "Frobenius determinant theorem",
+    "test": false,
+    "submitter": "Kim Morrison",
+    "module": "LeanEval.RepresentationTheory.FrobeniusDeterminant",
+    "holes": [
+      "frobenius_group_determinant"
+    ],
+    "generated_path": "generated/frobenius_group_determinant"
+  },
+  {
     "id": "frobenius_kernel_isNormal",
     "title": "Frobenius's theorem: the Frobenius kernel is normal",
     "test": false,
