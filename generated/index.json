@@ -1336,7 +1336,7 @@
   },
   {
     "id": "m23_irrep_tensor_square_decomp",
-    "title": "Existence of an order-10200960 group with a 22-dim irrep whose tensor square has 4 isotypic components",
+    "title": "Existence of a simple group of order 10200960 with a 22-dim irrep whose tensor square has 4 isotypic components",
     "test": false,
     "submitter": "Kim Morrison",
     "module": "LeanEval.RepresentationTheory.M23TensorSquare",
