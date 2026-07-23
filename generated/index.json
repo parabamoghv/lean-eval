@@ -1,5 +1,16 @@
 [
   {
+    "id": "H1_not_closedComplemented",
+    "title": "No bounded projection from L^1 onto H^1",
+    "test": false,
+    "submitter": "Yongxi Lin",
+    "module": "LeanEval.Analysis.HardySpace",
+    "holes": [
+      "H1_not_closedComplemented"
+    ],
+    "generated_path": "generated/H1_not_closedComplemented"
+  },
+  {
     "id": "abel_ruffini",
     "title": "Abel\u2013Ruffini theorem",
     "test": false,
@@ -22,6 +33,28 @@
     "generated_path": "generated/alternating_sign_matrix_count"
   },
   {
+    "id": "annulus_theorem_dim_four",
+    "title": "The Annulus Theorem in dimension 4 (Quinn)",
+    "test": false,
+    "submitter": "Kim Morrison",
+    "module": "LeanEval.Topology.AnnulusTheoremDimFour",
+    "holes": [
+      "annulus_theorem_dim_four"
+    ],
+    "generated_path": "generated/annulus_theorem_dim_four"
+  },
+  {
+    "id": "annulus_theorem_high_dim",
+    "title": "The Annulus Theorem in dimension \u2265 5 (Kirby)",
+    "test": false,
+    "submitter": "Kim Morrison",
+    "module": "LeanEval.Topology.AnnulusTheoremHighDim",
+    "holes": [
+      "annulus_theorem_high_dim"
+    ],
+    "generated_path": "generated/annulus_theorem_high_dim"
+  },
+  {
     "id": "anosov_bowen_shadowing",
     "title": "Anosov\u2013Bowen shadowing lemma",
     "test": false,
@@ -31,6 +64,17 @@
       "hyperbolic_has_shadowing"
     ],
     "generated_path": "generated/anosov_bowen_shadowing"
+  },
+  {
+    "id": "aspherical_integer_homology_four_sphere",
+    "title": "Existence of an aspherical integer homology 4-sphere",
+    "test": false,
+    "submitter": "Kim Morrison",
+    "module": "LeanEval.Topology.AsphericalHomologySphere",
+    "holes": [
+      "aspherical_integer_homology_four_sphere"
+    ],
+    "generated_path": "generated/aspherical_integer_homology_four_sphere"
   },
   {
     "id": "baer_suzuki",
@@ -121,6 +165,17 @@
     "generated_path": "generated/boone_higman_simple"
   },
   {
+    "id": "bourgain_polynomial_ergodic",
+    "title": "Bourgain's polynomial ergodic theorem",
+    "test": false,
+    "submitter": "Kim Morrison",
+    "module": "LeanEval.Dynamics.BourgainErgodic",
+    "holes": [
+      "bourgain_polynomial_ergodic"
+    ],
+    "generated_path": "generated/bourgain_polynomial_ergodic"
+  },
+  {
     "id": "brauer_character_in_cyclotomic",
     "title": "Character values of finite groups lie in cyclotomic fields",
     "test": false,
@@ -176,6 +231,17 @@
     "generated_path": "generated/brouwer_fixed_point"
   },
   {
+    "id": "brun_constant_converges",
+    "title": "Brun's theorem (convergence of the twin-prime reciprocal sum)",
+    "test": false,
+    "submitter": "Kim Morrison",
+    "module": "LeanEval.NumberTheory.BrunConstant",
+    "holes": [
+      "brun_constant_converges"
+    ],
+    "generated_path": "generated/brun_constant_converges"
+  },
+  {
     "id": "bvp_comparison",
     "title": "Comparison principle for the Dirichlet BVP",
     "test": false,
@@ -220,6 +286,17 @@
     "generated_path": "generated/chebyshev_sign_change"
   },
   {
+    "id": "chen_theorem",
+    "title": "Chen's theorem",
+    "test": false,
+    "submitter": "Kim Morrison",
+    "module": "LeanEval.NumberTheory.ChenTheorem",
+    "holes": [
+      "chen_theorem"
+    ],
+    "generated_path": "generated/chen_theorem"
+  },
+  {
     "id": "choquet_representation_theorem",
     "title": "Choquet's representation theorem",
     "test": false,
@@ -253,6 +330,17 @@
     "generated_path": "generated/ci_regenerate_main_check"
   },
   {
+    "id": "coherent_cohomology_finite_dimensional",
+    "title": "Coherent cohomology of a proper scheme over \u211a is finite-dimensional",
+    "test": false,
+    "submitter": "Brian Nugent",
+    "module": "LeanEval.AlgebraicGeometry.CoherentCohomologyFinite",
+    "holes": [
+      "coherent_cohomology_finite_dimensional"
+    ],
+    "generated_path": "generated/coherent_cohomology_finite_dimensional"
+  },
+  {
     "id": "commProb_closed",
     "title": "Commuting probabilities are closed",
     "test": false,
@@ -262,6 +350,17 @@
       "commProb_closed"
     ],
     "generated_path": "generated/commProb_closed"
+  },
+  {
+    "id": "compact_group_semisimple",
+    "title": "Complete reducibility for compact groups",
+    "test": false,
+    "submitter": "Kim Morrison",
+    "module": "LeanEval.RepresentationTheory.CompactGroupSemisimple",
+    "holes": [
+      "compact_group_semisimple"
+    ],
+    "generated_path": "generated/compact_group_semisimple"
   },
   {
     "id": "contractibleSpace_houseWithTwoRooms",
@@ -429,6 +528,17 @@
       "entropy_dimension_lyapunov"
     ],
     "generated_path": "generated/entropy_dimension_lyapunov"
+  },
+  {
+    "id": "equichordal_point_unique",
+    "title": "Equichordal point theorem (convex curves have a unique equichordal point)",
+    "test": false,
+    "submitter": "Kim Morrison",
+    "module": "LeanEval.Geometry.Equichordal",
+    "holes": [
+      "equichordal_point_unique"
+    ],
+    "generated_path": "generated/equichordal_point_unique"
   },
   {
     "id": "erdos_unit_distance_conjecture_false",
@@ -631,6 +741,17 @@
     "generated_path": "generated/fraser_kakeya_fourier_decay"
   },
   {
+    "id": "frobenius_group_determinant",
+    "title": "Frobenius determinant theorem",
+    "test": false,
+    "submitter": "Kim Morrison",
+    "module": "LeanEval.RepresentationTheory.FrobeniusDeterminant",
+    "holes": [
+      "frobenius_group_determinant"
+    ],
+    "generated_path": "generated/frobenius_group_determinant"
+  },
+  {
     "id": "frobenius_kernel_isNormal",
     "title": "Frobenius's theorem: the Frobenius kernel is normal",
     "test": false,
@@ -684,6 +805,17 @@
       "g2_irrep_tensor_square_decomp"
     ],
     "generated_path": "generated/g2_irrep_tensor_square_decomp"
+  },
+  {
+    "id": "gauss_wantzel_constructible_polygon",
+    "title": "Gauss-Wantzel constructible regular polygon theorem",
+    "test": false,
+    "submitter": "Kim Morrison",
+    "module": "LeanEval.NumberTheory.GaussWantzel",
+    "holes": [
+      "gauss_wantzel_constructible_polygon"
+    ],
+    "generated_path": "generated/gauss_wantzel_constructible_polygon"
   },
   {
     "id": "glAction_range_eq_centralizer_symAction",
@@ -1048,6 +1180,17 @@
     "generated_path": "generated/kepler_conjecture"
   },
   {
+    "id": "kirk_normal_structure",
+    "title": "Kirk's normal-structure fixed point theorem",
+    "test": false,
+    "submitter": "Kim Morrison",
+    "module": "LeanEval.Topology.KirkNormalStructure",
+    "holes": [
+      "kirk_normal_structure"
+    ],
+    "generated_path": "generated/kirk_normal_structure"
+  },
+  {
     "id": "kolmogorov_arnold_superposition",
     "title": "Kolmogorov\u2013Arnold superposition theorem (non-universal Lorentz form)",
     "test": false,
@@ -1193,7 +1336,7 @@
   },
   {
     "id": "m23_irrep_tensor_square_decomp",
-    "title": "Existence of an order-10200960 group with a 22-dim irrep whose tensor square has 4 isotypic components",
+    "title": "Existence of a simple group of order 10200960 with a 22-dim irrep whose tensor square has 4 isotypic components",
     "test": false,
     "submitter": "Kim Morrison",
     "module": "LeanEval.RepresentationTheory.M23TensorSquare",
@@ -1214,6 +1357,17 @@
     "generated_path": "generated/mandelbar_not_path_connected"
   },
   {
+    "id": "mandelbrot_boundary_dimh",
+    "title": "Hausdorff dimension of the Mandelbrot boundary (Shishikura)",
+    "test": false,
+    "submitter": "Kim Morrison",
+    "module": "LeanEval.Dynamics.MandelbrotBoundary",
+    "holes": [
+      "mandelbrot_boundary_dimh"
+    ],
+    "generated_path": "generated/mandelbrot_boundary_dimh"
+  },
+  {
     "id": "mandelbrot_connected",
     "title": "Mandelbrot set is connected (Douady\u2013Hubbard)",
     "test": false,
@@ -1223,6 +1377,17 @@
       "mandelbrot_connected"
     ],
     "generated_path": "generated/mandelbrot_connected"
+  },
+  {
+    "id": "manolescu_triangulation_disproof",
+    "title": "Manolescu's disproof of the triangulation conjecture",
+    "test": false,
+    "submitter": "Kim Morrison",
+    "module": "LeanEval.Topology.ManolescuTriangulation",
+    "holes": [
+      "manolescu_triangulation_disproof"
+    ],
+    "generated_path": "generated/manolescu_triangulation_disproof"
   },
   {
     "id": "margulis_ruelle",
@@ -1417,6 +1582,28 @@
     "generated_path": "generated/noncomputable_hole_example"
   },
   {
+    "id": "nonlinear_three_manifold_group",
+    "title": "A 3-manifold group with no faithful representation into GL(4, \u211d)",
+    "test": false,
+    "submitter": "Kim Morrison",
+    "module": "LeanEval.Topology.NonlinearThreeManifoldGroup",
+    "holes": [
+      "nonlinear_three_manifold_group"
+    ],
+    "generated_path": "generated/nonlinear_three_manifold_group"
+  },
+  {
+    "id": "normal_spectral_theorem",
+    "title": "Normal spectral theorem",
+    "test": false,
+    "submitter": "Kim Morrison",
+    "module": "LeanEval.LinearAlgebra.NormalSpectralTheorem",
+    "holes": [
+      "normal_spectral_theorem"
+    ],
+    "generated_path": "generated/normal_spectral_theorem"
+  },
+  {
     "id": "novikov_unsolvable",
     "title": "Novikov's theorem: the word problem is undecidable for finitely presented groups",
     "test": false,
@@ -1426,6 +1613,17 @@
       "novikov_unsolvable"
     ],
     "generated_path": "generated/novikov_unsolvable"
+  },
+  {
+    "id": "nyquist_shannon_sampling",
+    "title": "Nyquist\u2013Shannon sampling theorem",
+    "test": false,
+    "submitter": "Kim Morrison",
+    "module": "LeanEval.Analysis.NyquistShannon",
+    "holes": [
+      "nyquist_shannon_sampling"
+    ],
+    "generated_path": "generated/nyquist_shannon_sampling"
   },
   {
     "id": "oppenheim_inequality",
@@ -1470,6 +1668,17 @@
       "pascal"
     ],
     "generated_path": "generated/pascal"
+  },
+  {
+    "id": "peano_existence",
+    "title": "Peano existence theorem for ODEs",
+    "test": false,
+    "submitter": "Kim Morrison",
+    "module": "LeanEval.Analysis.PeanoExistence",
+    "holes": [
+      "peano_existence"
+    ],
+    "generated_path": "generated/peano_existence"
   },
   {
     "id": "pell_solution_convergent",
@@ -1692,6 +1901,17 @@
     "generated_path": "generated/riemann_hypothesis_iff_lagarias_elementary_criterion"
   },
   {
+    "id": "riesz_brothers_theorem",
+    "title": "Riesz brothers' theorem",
+    "test": false,
+    "submitter": "Yongxi Lin",
+    "module": "LeanEval.Analysis.RieszBrothers",
+    "holes": [
+      "riesz_brothers_theorem"
+    ],
+    "generated_path": "generated/riesz_brothers_theorem"
+  },
+  {
     "id": "rising_sun_lemma",
     "title": "Riesz's rising sun lemma",
     "test": false,
@@ -1791,6 +2011,17 @@
     "generated_path": "generated/schreier_conjecture"
   },
   {
+    "id": "semilinear_poisson_radial_symmetry",
+    "title": "Radial symmetry for positive semilinear Poisson solutions",
+    "test": false,
+    "submitter": "Yongxi Lin",
+    "module": "LeanEval.Analysis.PDE.RadialSymmetry",
+    "holes": [
+      "semilinear_poisson_radial_symmetry"
+    ],
+    "generated_path": "generated/semilinear_poisson_radial_symmetry"
+  },
+  {
     "id": "shafarevich_relation_rank_bound",
     "title": "Shafarevich's relation-rank bound",
     "test": false,
@@ -1800,6 +2031,17 @@
       "shafarevich_relation_rank_bound"
     ],
     "generated_path": "generated/shafarevich_relation_rank_bound"
+  },
+  {
+    "id": "shannon_capacity_pentagon",
+    "title": "Shannon capacity of the pentagon",
+    "test": false,
+    "submitter": "Kim Morrison",
+    "module": "LeanEval.Combinatorics.ShannonCapacityPentagon",
+    "holes": [
+      "shannon_capacity_pentagon"
+    ],
+    "generated_path": "generated/shannon_capacity_pentagon"
   },
   {
     "id": "smale_conjecture",
@@ -1989,6 +2231,28 @@
     "generated_path": "generated/topological_classification_of_surfaces"
   },
   {
+    "id": "trace_cayley_hamilton_newton",
+    "title": "Trace Cayley-Hamilton / Newton identity",
+    "test": false,
+    "submitter": "Kim Morrison",
+    "module": "LeanEval.LinearAlgebra.TraceNewton",
+    "holes": [
+      "trace_cayley_hamilton_newton"
+    ],
+    "generated_path": "generated/trace_cayley_hamilton_newton"
+  },
+  {
+    "id": "turing_recursive_equiv",
+    "title": "General recursive equals Turing computable",
+    "test": false,
+    "submitter": "Kim Morrison",
+    "module": "LeanEval.ModelTheory.TuringRecursive",
+    "holes": [
+      "turing_recursive_equiv"
+    ],
+    "generated_path": "generated/turing_recursive_equiv"
+  },
+  {
     "id": "tverberg_theorem",
     "title": "Tverberg's theorem",
     "test": false,
@@ -2077,6 +2341,17 @@
     "generated_path": "generated/wallpaper_groups_17"
   },
   {
+    "id": "watanabe_four_dim_smale_disproof",
+    "title": "Watanabe's disproof of the 4-dimensional Smale conjecture",
+    "test": false,
+    "submitter": "Kim Morrison",
+    "module": "LeanEval.Topology.WatanabeSmaleDisproof",
+    "holes": [
+      "watanabe_four_dim_smale_disproof"
+    ],
+    "generated_path": "generated/watanabe_four_dim_smale_disproof"
+  },
+  {
     "id": "weak_morse_inequality",
     "title": "Weak Morse inequalities",
     "test": false,
@@ -2132,6 +2407,28 @@
     "generated_path": "generated/wiener_atom_detection"
   },
   {
+    "id": "wiener_inverse_closed",
+    "title": "Wiener's 1/f theorem",
+    "test": false,
+    "submitter": "Kim Morrison",
+    "module": "LeanEval.Analysis.WienerOneOverF",
+    "holes": [
+      "wiener_inverse_closed"
+    ],
+    "generated_path": "generated/wiener_inverse_closed"
+  },
+  {
+    "id": "wiener_levy_analytic_calculus",
+    "title": "Wiener\u2013L\u00e9vy theorem",
+    "test": false,
+    "submitter": "Kim Morrison",
+    "module": "LeanEval.Analysis.WienerLevy",
+    "holes": [
+      "wiener_levy_analytic_calculus"
+    ],
+    "generated_path": "generated/wiener_levy_analytic_calculus"
+  },
+  {
     "id": "wigner_semicircle",
     "title": "Wigner semicircle law",
     "test": false,
@@ -2141,5 +2438,16 @@
       "wigner_semicircle"
     ],
     "generated_path": "generated/wigner_semicircle"
+  },
+  {
+    "id": "zhang_bounded_prime_gaps",
+    "title": "Bounded gaps between primes",
+    "test": false,
+    "submitter": "Kim Morrison",
+    "module": "LeanEval.NumberTheory.BoundedPrimeGaps",
+    "holes": [
+      "zhang_bounded_prime_gaps"
+    ],
+    "generated_path": "generated/zhang_bounded_prime_gaps"
   }
 ]
